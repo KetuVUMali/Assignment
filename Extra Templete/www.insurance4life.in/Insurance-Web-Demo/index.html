@@ -1,0 +1,1072 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Insurance4Life | Web Demo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://www.insurance4life.in/assets/css/flaticon.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="site-header sticky-top">
+        <nav class="navbar navbar-light bg-white">
+            <div class="container">
+                <a class="navbar-brand p-0 me-xl-4" href="#" data-aos="fade-down" data-aos-duration="800">
+                    <img class="brand-logo" src="https://www.insurance4life.in/assets/images/sg-shrigoda-logo.svg"
+                        alt="Insurance4Life" />
+                </a>
+
+                <div class="d-none d-xl-flex align-items-center flex-grow-1">
+                    <ul class="d-flex flex-row navbar-nav mx-auto align-items-xl-center gap-xl-1 main-nav">
+                        <li class="nav-item has-submenu menu-products" data-aos="fade-down" data-aos-delay="100">
+                            <div class="menu-link-row">
+                                <a class="nav-link" href="#">Insurance Products</a>
+                                <button class="submenu-toggle d-xl-none" type="button"
+                                    aria-label="Toggle insurance products submenu">
+                                    <i class="bi bi-chevron-down"></i>
+                                </button>
+                            </div>
+                            <ul class="submenu">
+                                <li class="has-submenu">
+                                    <div class="menu-link-row">
+                                        <a href="#">Health Insurance</a>
+                                        <span class="submenu-arrow d-none d-xl-inline-flex"><i class="bi bi-chevron-right"></i></span>
+                                        <button class="submenu-toggle d-xl-none" type="button"
+                                            aria-label="Toggle health insurance submenu">
+                                            <i class="bi bi-chevron-down"></i>
+                                        </button>
+                                    </div>
+                                    <ul class="submenu">
+                                        <li><a href="#">New Policy</a></li>
+                                        <li><a href="#">Portability</a></li>
+                                        <li><a href="#">Top-up</a></li>
+                                        <li><a href="#">Health Insurance Companies</a></li>
+                                        <!-- <li><a href="#">Care Health Insurance</a></li>
+                                        <li><a href="#">Godigit Health Insurance</a></li>
+                                        <li><a href="#">Zuno Health Insurance</a></li>
+                                        <li><a href="#">Future Generali</a></li>
+                                        <li><a href="#">Raheja QBE</a></li> -->
+                                    </ul>
+                                </li>
+                                <li class="has-submenu">
+                                    <div class="menu-link-row">
+                                        <a href="#">Motor Insurance</a>
+                                        <span class="submenu-arrow d-none d-xl-inline-flex"><i class="bi bi-chevron-right"></i></span>
+                                        <button class="submenu-toggle d-xl-none" type="button" aria-label="Toggle motor submenu">
+                                            <i class="bi bi-chevron-down"></i>
+                                        </button>
+                                    </div>
+                                    <ul class="submenu">
+                                        <li><a href="#">Bike</a></li>
+                                        <li><a href="#">Car</a></li>
+                                        <li><a href="#">Goods Vehicle (GCV)</a></li>
+                                        <li><a href="#">Passenger Vehicle (PCV)</a></li>
+                                        <li><a href="#">Misc-D Vehicle</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-submenu">
+                                    <div class="menu-link-row">
+                                        <a href="#">Life Insurance</a>
+                                        <span class="submenu-arrow d-none d-xl-inline-flex"><i class="bi bi-chevron-right"></i></span>
+                                        <button class="submenu-toggle d-xl-none" type="button" aria-label="Toggle life submenu">
+                                            <i class="bi bi-chevron-down"></i>
+                                        </button>
+                                    </div>
+                                    <ul class="submenu">
+                                        <li><a href="#">Life</a></li>
+                                        <li><a href="#">Term Life</a></li>
+                                        <li><a href="#">Investment Life</a></li>
+                                        <li><a href="#">Child Education Plan</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-submenu">
+                                    <div class="menu-link-row">
+                                        <a href="#">Business Insurance</a>
+                                        <span class="submenu-arrow d-none d-xl-inline-flex"><i class="bi bi-chevron-right"></i></span>
+                                        <button class="submenu-toggle d-xl-none" type="button" aria-label="Toggle business submenu">
+                                            <i class="bi bi-chevron-down"></i>
+                                        </button>
+                                    </div>
+                                    <ul class="submenu">
+                                        <li><a href="#">Fire & Burglary</a></li>
+                                        <li><a href="#">Marine</a></li>
+                                        <li><a href="#">Liability</a></li>
+                                        <li><a href="#">Engineering</a></li>
+                                        <li><a href="#">Workman</a></li>
+                                        <li><a href="#">Cyber</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-submenu">
+                                    <div class="menu-link-row">
+                                        <a href="#">Employee Benefits</a>
+                                        <span class="submenu-arrow d-none d-xl-inline-flex"><i class="bi bi-chevron-right"></i></span>
+                                        <button class="submenu-toggle d-xl-none" type="button" aria-label="Toggle employee submenu">
+                                            <i class="bi bi-chevron-down"></i>
+                                        </button>
+                                    </div>
+                                    <ul class="submenu">
+                                        <li><a href="#">Group Mediclaim</a></li>
+                                        <li><a href="#">Group Personal Accident</a></li>
+                                        <li><a href="#">Group Term Life</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-submenu">
+                                    <div class="menu-link-row">
+                                        <a href="#">Other Insurance</a>
+                                        <span class="submenu-arrow d-none d-xl-inline-flex"><i class="bi bi-chevron-right"></i></span>
+                                        <button class="submenu-toggle d-xl-none" type="button" aria-label="Toggle other insurance submenu">
+                                            <i class="bi bi-chevron-down"></i>
+                                        </button>
+                                    </div>
+                                    <ul class="submenu">
+                                        <li><a href="#">Home</a></li>
+                                        <li><a href="#">Travel</a></li>
+                                        <li><a href="#">Overseas Student Travel</a></li>
+                                        <li><a href="#">Rural</a></li>
+                                        <li><a href="#">Crop</a></li>
+                                        <li><a href="#">Pet</a></li>
+                                        <li><a href="#">Miscellaneous</a></li>
+                                        <li><a href="#">Weather</a></li>
+                                        <li><a href="#">Mosquito Bites</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item" data-aos="fade-down" data-aos-delay="150"><a class="nav-link" href="#">Claims</a></li>
+                        <li class="nav-item" data-aos="fade-down" data-aos-delay="200"><a class="nav-link" href="#">Renewals</a></li>
+                        <li class="nav-item" data-aos="fade-down" data-aos-delay="250"><a class="nav-link" href="#">Contact</a></li>
+                    </ul>
+
+                    <div class="d-xl-flex align-items-center ms-xl-3 header-right" data-aos="fade-left" data-aos-delay="250">
+                        <div class="help-block d-none d-md-block">
+                            <span class="d-block">Happy to help you</span>
+                            <a href="tel:18005723234">1800 572 3234</a>
+                        </div>
+                        <a class="btn btn-brand btn-sm mt-2 mt-xl-0 ms-xl-3" href="#">Login</a>
+                    </div>
+                </div>
+
+                <div class="d-flex d-xl-none align-items-center ms-auto mobile-header-actions">
+                    <a class="btn btn-brand btn-sm me-3" href="#">Login</a>
+                    <button class="mobile-menu-btn" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#mobileMenuCanvas" aria-controls="mobileMenuCanvas" aria-label="Open mobile menu">
+                        <span></span><span></span><span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <div class="offcanvas offcanvas-end mobile-menu-offcanvas" tabindex="-1" id="mobileMenuCanvas"
+            aria-labelledby="mobileMenuCanvasLabel">
+            <div class="offcanvas-header">
+                <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="mobile-menu-links">
+                    <button class="mobile-products-btn" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#mobileProductsCollapse" aria-expanded="false"
+                        aria-controls="mobileProductsCollapse">
+                        <span>Insurance Products</span>
+                        <span class="mobile-arrow-box"><i class="bi bi-chevron-left"></i></span>
+                    </button>
+                    <div class="collapse" id="mobileProductsCollapse">
+                        <ul class="mobile-submenu">
+                            <li>
+                                <button class="mobile-category-btn" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#mobileHealthSubmenu" aria-expanded="false"
+                                    aria-controls="mobileHealthSubmenu">
+                                    <span>Health Insurance</span>
+                                    <span class="mobile-arrow-box"><i class="bi bi-chevron-down"></i></span>
+                                </button>
+                                <ul class="collapse mobile-category-links" id="mobileHealthSubmenu">
+                                    <li><a href="#">New Policy</a></li>
+                                    <li><a href="#">Portability</a></li>
+                                    <li><a href="#">Top-up</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <button class="mobile-category-btn" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#mobileMotorSubmenu" aria-expanded="false"
+                                    aria-controls="mobileMotorSubmenu">
+                                    <span>Motor Insurance</span>
+                                    <span class="mobile-arrow-box"><i class="bi bi-chevron-down"></i></span>
+                                </button>
+                                <ul class="collapse mobile-category-links" id="mobileMotorSubmenu">
+                                    <li><a href="#">Bike</a></li>
+                                    <li><a href="#">Car</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <button class="mobile-category-btn" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#mobileLifeSubmenu" aria-expanded="false"
+                                    aria-controls="mobileLifeSubmenu">
+                                    <span>Life Insurance</span>
+                                    <span class="mobile-arrow-box"><i class="bi bi-chevron-down"></i></span>
+                                </button>
+                                <ul class="collapse mobile-category-links" id="mobileLifeSubmenu">
+                                    <li><a href="#">Life</a></li>
+                                    <li><a href="#">Term Life</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <button class="mobile-category-btn" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#mobileBusinessSubmenu" aria-expanded="false"
+                                    aria-controls="mobileBusinessSubmenu">
+                                    <span>Business Insurance</span>
+                                    <span class="mobile-arrow-box"><i class="bi bi-chevron-down"></i></span>
+                                </button>
+                                <ul class="collapse mobile-category-links" id="mobileBusinessSubmenu">
+                                    <li><a href="#">Fire & Burglary</a></li>
+                                    <li><a href="#">Marine</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <button class="mobile-category-btn" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#mobileEmployeeSubmenu" aria-expanded="false"
+                                    aria-controls="mobileEmployeeSubmenu">
+                                    <span>Employee Benefits</span>
+                                    <span class="mobile-arrow-box"><i class="bi bi-chevron-down"></i></span>
+                                </button>
+                                <ul class="collapse mobile-category-links" id="mobileEmployeeSubmenu">
+                                    <li><a href="#">Group Mediclaim</a></li>
+                                    <li><a href="#">Group Term Life</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <button class="mobile-category-btn" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#mobileOtherSubmenu" aria-expanded="false"
+                                    aria-controls="mobileOtherSubmenu">
+                                    <span>Other Insurance</span>
+                                    <span class="mobile-arrow-box"><i class="bi bi-chevron-down"></i></span>
+                                </button>
+                                <ul class="collapse mobile-category-links" id="mobileOtherSubmenu">
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Travel</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="#">Claims</a>
+                    <a href="#">Renewals</a>
+                    <a href="#">Contact</a>
+                </div>
+
+                <div class="mobile-contact">
+                    <h3>Contact Info</h3>
+                    <p>1/1A, Biplabi Anukul Chandra Street, 3F/1, Kolkata - 700072</p>
+                    <a href="tel:18005723234">1800 572 3234</a>
+                    <a href="mailto:info@insurance4life.in">info@insurance4life.in</a>
+                    <div class="mobile-socials">
+                        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section class="hero-section section-space">
+            <div class="container">
+                <div class="row align-items-start g-4 g-xl-3">
+                    <div class="col-lg-6 hero-content-col">
+                        <h1 class="hero-title" data-aos="fade-up" data-aos-duration="900">
+                            <span>Ensure Everything,</span> Worry Nothing
+                        </h1>
+                        <p class="hero-subtitle mb-4" data-aos="fade-up" data-aos-delay="120" data-aos-duration="900">
+                            As leading insurance brokers, our unwavering commitment is to deliver unparalleled service
+                            and
+                            expertise, ensuring comprehensive protection and peace of mind for our valued clients.
+                        </p>
+
+                        <!-- Quick Insurance Categories -->
+                        <div class="row row-cols-3 row-cols-sm-4 g-2 g-sm-3 quick-cards-grid">
+                            <div class="col" data-aos="zoom-in" data-aos-delay="120">
+                                <a class="quick-card" href="#">
+                                    <img src="https://www.insurance4life.in/assets/images/new-icons/Health_Insurance.png"
+                                        alt="Health Insurance" />
+                                    <span>Health</span>
+                                </a>
+                            </div>
+                            <div class="col" data-aos="zoom-in" data-aos-delay="170">
+                                <a class="quick-card" href="#">
+                                    <img src="https://www.insurance4life.in/assets/images/new-icons/Car_Insurance.png"
+                                        alt="Car Insurance" />
+                                    <span>Car</span>
+                                </a>
+                            </div>
+                            <div class="col" data-aos="zoom-in" data-aos-delay="220">
+                                <a class="quick-card" href="#">
+                                    <img src="https://www.insurance4life.in/assets/images/new-icons/Motorcycle_Insurance.png"
+                                        alt="Bike Insurance" />
+                                    <span>Bike</span>
+                                </a>
+                            </div>
+                            <div class="col" data-aos="zoom-in" data-aos-delay="270">
+                                <a class="quick-card" href="#">
+                                    <img src="https://www.insurance4life.in/assets/images/new-icons/life_Insurance.png"
+                                        alt="Life Insurance" />
+                                    <span>Life</span>
+                                </a>
+                            </div>
+                            <div class="col d-sm-none" data-aos="zoom-in" data-aos-delay="320">
+                                <a class="quick-card quick-card-viewall" href="#">
+                                    <img src="https://www.insurance4life.in/assets/images/revised-images/next.png"
+                                        alt="View all products" />
+                                    <span>View all</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <button class="btn btn-soft-brand mt-3 px-3" type="button" data-aos="fade-up" data-aos-delay="320">More Products &raquo;</button>
+                    </div>
+                    <div class="col-lg-6 hero-media-col">
+                        <div class="hero-image-wrap" data-aos="fade-left" data-aos-duration="1000">
+                            <div class="hero-spark" aria-hidden="true">
+                                <i class="bi bi-sun-fill"></i>
+                            </div>
+                            <img class="img-fluid"
+                                src="https://www.insurance4life.in/assets/images/revised-images/Insurance-landing-page-image.png"
+                                alt="Insurance agent" />
+                            <div class="experience-badge" data-aos="zoom-in" data-aos-delay="220">
+                                <img src="https://www.insurance4life.in/assets/images/revised-images/badge.png"
+                                    alt="Experience badge" />
+                                <span>61 Years of Experience</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats -->
+        <section class="stats-section py-4">
+            <div class="container">
+                <h2 class="section-heading text-center" data-aos="fade-up">Loved and Appreciated by Thousands</h2>
+                <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3 mt-2 stats-row">
+                    <div class="col" data-aos="fade-up" data-aos-delay="50">
+                        <div class="metric-card">
+                            <img src="https://www.insurance4life.in/assets/images/icons/happy.svg" alt="Happy faces" />
+                            <h3>11.5 Lakh+</h3>
+                            <p>Happy Faces</p>
+                        </div>
+                    </div>
+                    <div class="col" data-aos="fade-up" data-aos-delay="100">
+                        <div class="metric-card">
+                            <img src="https://www.insurance4life.in/assets/images/icons/handshake.svg"
+                                alt="Companies insured" />
+                            <h3>930+</h3>
+                            <p>Companies Insured</p>
+                        </div>
+                    </div>
+                    <div class="col" data-aos="fade-up" data-aos-delay="150">
+                        <div class="metric-card">
+                            <img src="https://www.insurance4life.in/assets/images/icons/writing-pad.svg"
+                                alt="Insurance products" />
+                            <h3>250+</h3>
+                            <p>Insurance Product</p>
+                        </div>
+                    </div>
+                    <div class="col" data-aos="fade-up" data-aos-delay="200">
+                        <div class="metric-card">
+                            <img src="https://www.insurance4life.in/assets/images/icons/claim-ratio.svg"
+                                alt="Claims served" />
+                            <h3>5.5 Lakh+</h3>
+                            <p>Claims Served</p>
+                        </div>
+                    </div>
+                    <div class="col metric-google" data-aos="fade-up" data-aos-delay="250">
+                        <div class="metric-card">
+                            <img src="https://www.insurance4life.in/assets/images/icons/google.svg"
+                                alt="Google rating" />
+                            <h3>4.9</h3>
+                            <p>Rated on Google</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Top Products -->
+        <section class="section-space pt-4 top-products-section">
+            <div class="container">
+                <div class="text-center mb-3 mb-md-4">
+                    <p class="section-tag ui-tag-brand mb-2" data-aos="fade-up">Top Selling Health Insurance</p>
+                    <h2 class="section-heading ui-heading-navy" data-aos="fade-up" data-aos-delay="100">Starting From Rs. 5/day<sup>*</sup></h2>
+                </div>
+
+                <div class="top-products-slider-wrap" id="topProductsSliderWrap" data-aos="fade-up" data-aos-delay="150">
+                    <div class="top-products-slider-track" id="topProductsSliderTrack">
+                        <div class="top-products-slider-card">
+                            <article class="product-card">
+                                        <p class="price-ribbon">Rs.21/day*</p>
+                                        <img class="company-logo" src="https://insurance4life.s3.ap-south-1.amazonaws.com/ic-logos/general-insurance-companies/care-health.jpg" alt="Care Health Insurance" />
+                                        <h3>Care Supreme</h3>
+                                        <ul class="feature-list">
+                                            <li>Coverage: Upto Rs. 1 Crore</li>
+                                            <li>24800+ Network Hospitals</li>
+                                        </ul>
+                                        <a class="btn btn-brand w-100 btn-sm" href="#">View More</a>
+                                    </article>
+                        </div>
+                        <div class="top-products-slider-card">
+                            <article class="product-card">
+                                        <p class="price-ribbon">Rs.16/day*</p>
+                                        <img class="company-logo" src="https://insurance4life.s3.ap-south-1.amazonaws.com/ic-logos/life-insurance-companies/future-generali.png" alt="Future Generali" />
+                                        <h3>Health Total - Vital Plan</h3>
+                                        <ul class="feature-list">
+                                            <li>Coverage: Upto Rs. 10 Lacs</li>
+                                            <li>8000+ Network Hospitals</li>
+                                        </ul>
+                                        <a class="btn btn-brand w-100 btn-sm" href="#">View More</a>
+                                    </article>
+                        </div>
+                        <div class="top-products-slider-card">
+                            <article class="product-card">
+                                        <p class="price-ribbon">Rs.17/day*</p>
+                                        <img class="company-logo" src="https://insurance4life.s3.ap-south-1.amazonaws.com/ic-logos/general-insurance-companies/Zuno.jpg" alt="Zuno" />
+                                        <h3>Gold Plan</h3>
+                                        <ul class="feature-list">
+                                            <li>Coverage: Upto Rs. 20 Lacs</li>
+                                            <li>10000+ Network Hospitals</li>
+                                        </ul>
+                                        <a class="btn btn-brand w-100 btn-sm" href="#">View More</a>
+                                    </article>
+                        </div>
+                        <div class="top-products-slider-card">
+                            <article class="product-card">
+                                        <p class="price-ribbon">Rs.7/day*</p>
+                                        <img class="company-logo" src="https://insurance4life.s3.ap-south-1.amazonaws.com/ic-logos/general-insurance-companies/raheja-qbe.jpg" alt="Raheja QBE" />
+                                        <h3>Comprehensive Plan</h3>
+                                        <ul class="feature-list">
+                                            <li>Coverage: Upto Rs. 50 Lacs</li>
+                                            <li>5000+ Network Hospitals</li>
+                                        </ul>
+                                        <a class="btn btn-brand w-100 btn-sm" href="#">View More</a>
+                                    </article>
+                        </div>
+                        <div class="top-products-slider-card">
+                            <article class="product-card">
+                                        <p class="price-ribbon">Rs.23/day*</p>
+                                        <img class="company-logo" src="https://insurance4life.s3.ap-south-1.amazonaws.com/ic-logos/general-insurance-companies/digit.png" alt="Digit" />
+                                        <h3>Double Wallet</h3>
+                                        <ul class="feature-list">
+                                            <li>Coverage: Upto Rs. 1 Crore</li>
+                                            <li>16400+ Network Hospitals</li>
+                                        </ul>
+                                        <a class="btn btn-brand w-100 btn-sm" href="#">View More</a>
+                                    </article>
+                        </div>
+                        <div class="top-products-slider-card">
+                            <article class="product-card">
+                                        <p class="price-ribbon">Rs.32/day*</p>
+                                        <img class="company-logo" src="https://insurance4life.s3.ap-south-1.amazonaws.com/ic-logos/general-insurance-companies/care-health.jpg" alt="Care Health" />
+                                        <h3>Care Advantage</h3>
+                                        <ul class="feature-list">
+                                            <li>Coverage: Upto Rs. 6 Crore</li>
+                                            <li>24800+ Network Hospitals</li>
+                                        </ul>
+                                        <a class="btn btn-brand w-100 btn-sm" href="#">View More</a>
+                                    </article>
+                        </div>
+                        <div class="top-products-slider-card">
+                            <article class="product-card">
+                                        <p class="price-ribbon">Rs.10/day*</p>
+                                        <img class="company-logo" src="https://insurance4life.s3.ap-south-1.amazonaws.com/ic-logos/general-insurance-companies/Zuno.jpg" alt="Zuno" />
+                                        <h3>Silver Plan</h3>
+                                        <ul class="feature-list">
+                                            <li>Coverage: Upto Rs. 5 Lacs</li>
+                                            <li>10000+ Network Hospitals</li>
+                                        </ul>
+                                        <a class="btn btn-brand w-100 btn-sm" href="#">View More</a>
+                                    </article>
+                        </div>
+                        <div class="top-products-slider-card">
+                            <article class="product-card">
+                                        <p class="price-ribbon">Rs.6/day*</p>
+                                        <img class="company-logo" src="https://insurance4life.s3.ap-south-1.amazonaws.com/ic-logos/general-insurance-companies/raheja-qbe.jpg" alt="Raheja QBE" />
+                                        <h3>A La Carte Plan</h3>
+                                        <ul class="feature-list">
+                                            <li>Coverage: Upto Rs. 50 Lacs</li>
+                                            <li>5000+ Network Hospitals</li>
+                                        </ul>
+                                        <a class="btn btn-brand w-100 btn-sm" href="#">View More</a>
+                                    </article>
+                        </div>
+                        <div class="top-products-slider-card">
+                            <article class="product-card">
+                                        <p class="price-ribbon">Rs.25/day*</p>
+                                        <img class="company-logo" src="https://insurance4life.s3.ap-south-1.amazonaws.com/ic-logos/general-insurance-companies/digit.png" alt="Digit" />
+                                        <h3>Infinity Wallet</h3>
+                                        <ul class="feature-list">
+                                            <li>Coverage: Upto Rs. 1 Crore</li>
+                                            <li>16400+ Network Hospitals</li>
+                                        </ul>
+                                        <a class="btn btn-brand w-100 btn-sm" href="#">View More</a>
+                                    </article>
+                        </div>
+                        <div class="top-products-slider-card">
+                            <article class="product-card">
+                                        <p class="price-ribbon">Rs.39/day*</p>
+                                        <img class="company-logo" src="https://insurance4life.s3.ap-south-1.amazonaws.com/ic-logos/general-insurance-companies/care-health.jpg" alt="Care Health Insurance" />
+                                        <h3>Care Senior</h3>
+                                        <ul class="feature-list">
+                                            <li>Coverage: Upto Rs. 10 Lacs</li>
+                                            <li>24800+ Network Hospitals</li>
+                                        </ul>
+                                        <a class="btn btn-brand w-100 btn-sm" href="#">View More</a>
+                                    </article>
+                        </div>
+                        <div class="top-products-slider-card">
+                            <article class="product-card">
+                                        <p class="price-ribbon">Rs.39/day*</p>
+                                        <img class="company-logo" src="https://insurance4life.s3.ap-south-1.amazonaws.com/ic-logos/general-insurance-companies/Zuno.jpg" alt="Zuno" />
+                                        <h3>Platinum Plan</h3>
+                                        <ul class="feature-list">
+                                            <li>Coverage: Upto Rs. 1 Crore</li>
+                                            <li>10000+ Network Hospitals</li>
+                                        </ul>
+                                        <a class="btn btn-brand w-100 btn-sm" href="#">View More</a>
+                                    </article>
+                        </div>
+                        <div class="top-products-slider-card">
+                            <article class="product-card">
+                                        <p class="price-ribbon">Rs.5/day*</p>
+                                        <img class="company-logo" src="https://insurance4life.s3.ap-south-1.amazonaws.com/ic-logos/general-insurance-companies/raheja-qbe.jpg" alt="Raheja QBE" />
+                                        <h3>Basic Plan</h3>
+                                        <ul class="feature-list">
+                                            <li>Coverage: Upto Rs. 50 Lacs</li>
+                                            <li>5000+ Network Hospitals</li>
+                                        </ul>
+                                        <a class="btn btn-brand w-100 btn-sm" href="#">View More</a>
+                                    </article>
+                        </div>
+                        <div class="top-products-slider-card">
+                            <article class="product-card">
+                                        <p class="price-ribbon">Rs.28/day*</p>
+                                        <img class="company-logo" src="https://insurance4life.s3.ap-south-1.amazonaws.com/ic-logos/general-insurance-companies/digit.png" alt="Digit" />
+                                        <h3>Worldwide Treatment</h3>
+                                        <ul class="feature-list">
+                                            <li>Coverage: Upto Rs. 1 Crore</li>
+                                            <li>16400+ Network Hospitals</li>
+                                        </ul>
+                                        <a class="btn btn-brand w-100 btn-sm" href="#">View More</a>
+                                    </article>
+                        </div>
+                        <div class="top-products-slider-card">
+                            <article class="product-card">
+                                        <p class="price-ribbon">Rs.4/day*</p>
+                                        <img class="company-logo" src="https://insurance4life.s3.ap-south-1.amazonaws.com/ic-logos/general-insurance-companies/raheja-qbe.jpg" alt="Raheja QBE" />
+                                        <h3>Super Saver Plan</h3>
+                                        <ul class="feature-list">
+                                            <li>Coverage: Upto Rs. 50 Lacs</li>
+                                            <li>5000+ Network Hospitals</li>
+                                        </ul>
+                                        <a class="btn btn-brand w-100 btn-sm" href="#">View More</a>
+                                    </article>
+                        </div>
+                        <div class="top-products-slider-card">
+                            <article class="product-card">
+                                        <p class="price-ribbon">Rs.28/day*</p>
+                                        <img class="company-logo" src="https://insurance4life.s3.ap-south-1.amazonaws.com/ic-logos/general-insurance-companies/care-health.jpg" alt="Care Health Insurance" />
+                                        <h3>Care Classic</h3>
+                                        <ul class="feature-list">
+                                            <li>Coverage: Upto Rs. 15 Lacs</li>
+                                            <li>24800+ Network Hospitals</li>
+                                        </ul>
+                                        <a class="btn btn-brand w-100 btn-sm" href="#">View More</a>
+                                    </article>
+                        </div>
+                        <div class="top-products-slider-card">
+                            <article class="product-card">
+                                        <p class="price-ribbon">Rs.6/day*</p>
+                                        <img class="company-logo" src="https://insurance4life.s3.ap-south-1.amazonaws.com/ic-logos/general-insurance-companies/raheja-qbe.jpg" alt="Raheja QBE" />
+                                        <h3>Arogya Sanjeevani</h3>
+                                        <ul class="feature-list">
+                                            <li>Coverage: Upto Rs. 5 Lacs</li>
+                                            <li>5000+ Network Hospitals</li>
+                                        </ul>
+                                        <a class="btn btn-brand w-100 btn-sm" href="#">View More</a>
+                                    </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Why Choose Us -->
+        <section class="choose-section section-space">
+            <div class="container">
+                <div class="row g-4 g-lg-3 align-items-center">
+                    <div class="col-lg-7 choose-content-col">
+                        <p class="section-tag ui-tag-brand ui-tag-compact mb-2" data-aos="fade-up">Why Choose Us</p>
+                        <h2 class="section-heading ui-heading-navy mb-3" data-aos="fade-up" data-aos-delay="100">Your Peace of Mind, Our Priority</h2>
+                        <p class="text-muted" data-aos="fade-up" data-aos-delay="150">
+                            We provide unparalleled service and expertise, backed by years of industry experience. Our
+                            commitment
+                            is to simplify the complexities of insurance coverage, ensuring you receive the best
+                            solutions tailored
+                            to your unique needs.
+                        </p>
+                        <div class="row row-cols-1 row-cols-sm-2 g-2 g-md-3 mt-2 choose-features-grid">
+                            <div class="col" data-aos="fade-up" data-aos-delay="150">
+                                <div class="mini-feature">
+                                    <img src="https://www.insurance4life.in/assets/images/icons/custom.png"
+                                        alt="Personalized Services" />
+                                    <span>Personalized Services & Experience</span>
+                                </div>
+                            </div>
+                            <div class="col" data-aos="fade-up" data-aos-delay="200">
+                                <div class="mini-feature">
+                                    <img src="https://www.insurance4life.in/assets/images/icons/customer-heart-and-mind.png"
+                                        alt="Customers first" />
+                                    <span>Customers at our Heart & Mind</span>
+                                </div>
+                            </div>
+                            <div class="col" data-aos="fade-up" data-aos-delay="250">
+                                <div class="mini-feature">
+                                    <img src="https://www.insurance4life.in/assets/images/icons/support.png"
+                                        alt="Free consultation" />
+                                    <span>Free Consultations & Advice</span>
+                                </div>
+                            </div>
+                            <div class="col" data-aos="fade-up" data-aos-delay="300">
+                                <div class="mini-feature">
+                                    <img src="https://www.insurance4life.in/assets/images/icons/fast-claim.png"
+                                        alt="Fast claims" />
+                                    <span>Fast Claim Settlements</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="choose-media-wrap" data-aos="fade-left" data-aos-duration="1000">
+                            <img class="img-fluid choose-main-img"
+                                src="https://www.insurance4life.in/assets/images/revised-images/why-choose-us-main.png"
+                                alt="Why choose us" />
+                            <img class="floating-shield"
+                                src="https://www.insurance4life.in/assets/images/icons/fast-claim.png"
+                                alt="Shield icon" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonial-section section-space">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-lg-6 testimonial-content-col">
+                        <p class="section-tag ui-tag-brand ui-tag-tight mb-2" data-aos="fade-up">Happy Faces</p>
+                        <h2 class="section-heading ui-heading-navy mb-3" data-aos="fade-up" data-aos-delay="100">Our Happy Customers</h2>
+                        <p class="text-muted" data-aos="fade-up" data-aos-delay="150">
+                            We take pride in offering exceptional insurance services tailored to meet unique customer
+                            needs.
+                            Here's what our happy customers say about their experience with us.
+                        </p>
+                        <p class="fw-semibold mb-3" data-aos="fade-up" data-aos-delay="200">Thousands of unbiased reviews. Trusted by 10 Thousand+ customers.
+                        </p>
+                        <div class="rating-box" data-aos="zoom-in" data-aos-delay="250">
+                            <div class="rating-row">
+                                <img src="https://www.insurance4life.in/assets/images/icons/google.svg" alt="Google" />
+                                <strong>4.9 / 5</strong>
+                                <div class="stars text-warning">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                </div>
+                            </div>
+                            <a class="btn btn-brand btn-sm mt-2" href="https://shrigoda.com/MW8R" target="_blank"
+                                rel="noopener noreferrer">
+                                Write A Review
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <!-- This card updates via script.js -->
+                        <article class="testimonial-card" id="testimonialCard" data-aos="fade-left" data-aos-duration="900">
+                            <div class="quote"><i class="icon-Quote"></i></div>
+                            <p class="quote-text mb-3" id="testimonialText"></p>
+                            <div class="d-flex align-items-center gap-3">
+                                <img class="review-avatar" id="testimonialAvatar"
+                                    src="https://www.insurance4life.in/assets/images/resource/customer-review-1.png"
+                                    alt="Customer avatar" />
+                                <div>
+                                    <h3 class="mb-1 fs-6" id="testimonialName"></h3>
+                                    <p class="mb-1 small text-muted">~Source - Google Review Rating</p>
+                                    <div class="text-warning">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Partners -->
+        <section class="section-space pt-0 partners-section-ui">
+            <div class="container">
+                <div class="text-center mb-4 mb-md-5">
+                    <p class="section-tag mb-2" data-aos="fade-up">Our Reliable Insurance Partners</p>
+                    <h2 class="section-heading" data-aos="fade-up" data-aos-delay="100">Trusted General & Life Insurance Companies</h2>
+                </div>
+
+                <div class="partners-slider-wrap" id="partnersSliderWrap" data-aos="fade-up" data-aos-delay="120">
+                    <div class="partners-slider-track" id="partnersSliderTrack">
+                        <figure class="partners-logo-card"><img src="https://insurance4life.s3.ap-south-1.amazonaws.com/ic-logos/life-insurance-companies/aditya-birla-life-insurance.jpg" alt="Aditya Birla Sun Life Insurance" /></figure>
+                        <figure class="partners-logo-card"><img src="https://insurance4life.s3.ap-south-1.amazonaws.com/ic-logos/life-insurance-companies/Bandhan-Life.jpg" alt="Bandhan Life Insurance" /></figure>
+                        <figure class="partners-logo-card"><img src="https://insurance4life.s3.ap-south-1.amazonaws.com/ic-logos/life-insurance-companies/ageas-federal.png" alt="Ageas Federal Life Insurance" /></figure>
+                        <figure class="partners-logo-card"><img src="https://insurance4life.s3.ap-south-1.amazonaws.com/ic-logos/life-insurance-companies/aviva.jpg" alt="Aviva Life Insurance" /></figure>
+                        <figure class="partners-logo-card"><img src="https://insurance4life.s3.ap-south-1.amazonaws.com/ic-logos/life-insurance-companies/baja-life.jpg" alt="Bajaj Allianz Life Insurance" /></figure>
+                        <figure class="partners-logo-card"><img src="https://insurance4life.s3.ap-south-1.amazonaws.com/ic-logos/life-insurance-companies/bharti-axa-logo.jpg" alt="Bharti AXA Life Insurance" /></figure>
+                        <figure class="partners-logo-card"><img src="https://insurance4life.s3.ap-south-1.amazonaws.com/ic-logos/life-insurance-companies/edelweiss-life.jpg" alt="Edelweiss Life Insurance" /></figure>
+                        <figure class="partners-logo-card"><img src="https://insurance4life.s3.ap-south-1.amazonaws.com/ic-logos/life-insurance-companies/future-generali.png" alt="Future Generali India Insurance" /></figure>
+                        <figure class="partners-logo-card"><img src="https://insurance4life.s3.ap-south-1.amazonaws.com/ic-logos/life-insurance-companies/hdfc-life.jpg" alt="HDFC Life Insurance" /></figure>
+                        <figure class="partners-logo-card"><img src="https://insurance4life.s3.ap-south-1.amazonaws.com/ic-logos/life-insurance-companies/icici-prudential.jpg" alt="ICICI Prudential Life Insurance" /></figure>
+                        <figure class="partners-logo-card"><img src="https://insurance4life.s3.ap-south-1.amazonaws.com/ic-logos/life-insurance-companies/kotak-life.png" alt="Kotak Life Insurance" /></figure>
+                        <figure class="partners-logo-card"><img src="https://insurance4life.s3.ap-south-1.amazonaws.com/ic-logos/life-insurance-companies/max-life.jpg" alt="Max Life Insurance" /></figure>
+                        <figure class="partners-logo-card"><img src="https://insurance4life.s3.ap-south-1.amazonaws.com/ic-logos/life-insurance-companies/pnb-metlife.jpg" alt="PNB MetLife Insurance" /></figure>
+                        <figure class="partners-logo-card"><img src="https://insurance4life.s3.ap-south-1.amazonaws.com/ic-logos/life-insurance-companies/reliance-nippon-life.jpg" alt="Reliance Nippon Life Insurance" /></figure>
+                        <figure class="partners-logo-card"><img src="https://insurance4life.s3.ap-south-1.amazonaws.com/ic-logos/life-insurance-companies/sbi-life.jpg" alt="SBI Life Insurance" /></figure>
+                        <figure class="partners-logo-card"><img src="https://insurance4life.s3.ap-south-1.amazonaws.com/ic-logos/life-insurance-companies/tata-aia.png" alt="Tata AIA Life Insurance" /></figure>
+                        <figure class="partners-logo-card"><img src="https://insurance4life.s3.ap-south-1.amazonaws.com/ic-logos/life-insurance-companies/digit-life-insurance.jpg" alt="Digit Life Insurance" /></figure>
+                        <figure class="partners-logo-card"><img src="https://insurance4life.s3.ap-south-1.amazonaws.com/ic-logos/life-insurance-companies/pramerica-life.jpg" alt="Pramerica Life Insurance" /></figure>
+                    </div>
+                </div>
+
+                <div class="partners-slider-wrap" id="partnersSliderWrapBottom" data-aos="fade-up" data-aos-delay="180">
+                    <div class="partners-slider-track" id="partnersSliderTrackBottom">
+                        <figure class="partners-logo-card"><img src="https://insurance4life.s3.ap-south-1.amazonaws.com/ic-logos/general-insurance-companies/care-health.jpg" alt="Care health insurance" /></figure>
+                        <figure class="partners-logo-card"><img src="https://insurance4life.s3.ap-south-1.amazonaws.com/ic-logos/general-insurance-companies/digit.png" alt="Go Digit General Insurance Limited" /></figure>
+                        <figure class="partners-logo-card"><img src="https://insurance4life.s3.ap-south-1.amazonaws.com/ic-logos/general-insurance-companies/raheja-qbe.jpg" alt="Raheja QBE General Insurance" /></figure>
+                        <figure class="partners-logo-card"><img src="https://insurance4life.s3.ap-south-1.amazonaws.com/ic-logos/general-insurance-companies/Zuno.jpg" alt="Zuno General Insurance" /></figure>
+                        <figure class="partners-logo-card"><img src="https://insurance4life.s3.ap-south-1.amazonaws.com/ic-logos/general-insurance-companies/acko.png" alt="Acko General Insurance" /></figure>
+                        <figure class="partners-logo-card"><img src="https://insurance4life.s3.ap-south-1.amazonaws.com/ic-logos/general-insurance-companies/Bajaj.png" alt="Bajaj Allianz General Insurance" /></figure>
+                        <figure class="partners-logo-card"><img src="https://insurance4life.s3.ap-south-1.amazonaws.com/ic-logos/general-insurance-companies/ecgc-logo.jpg" alt="ECGC" /></figure>
+                        <figure class="partners-logo-card"><img src="https://insurance4life.s3.ap-south-1.amazonaws.com/ic-logos/general-insurance-companies/HDFC-Ergo.jpg" alt="HDFC ERGO General Insurance" /></figure>
+                        <figure class="partners-logo-card"><img src="https://insurance4life.s3.ap-south-1.amazonaws.com/ic-logos/general-insurance-companies/icici-lombard.png" alt="ICICI Lombard General Insurance" /></figure>
+                        <figure class="partners-logo-card"><img src="https://insurance4life.s3.ap-south-1.amazonaws.com/ic-logos/general-insurance-companies/IFFCO.jpg" alt="IFFCO Tokio General Insurance Company Limited" /></figure>
+                        <figure class="partners-logo-card"><img src="https://insurance4life.s3.ap-south-1.amazonaws.com/ic-logos/general-insurance-companies/Kotak.jpg" alt="Kotak General Insurance" /></figure>
+                        <figure class="partners-logo-card"><img src="https://insurance4life.s3.ap-south-1.amazonaws.com/ic-logos/general-insurance-companies/manipal-cigna.png" alt="ManipalCigna Health Insurance" /></figure>
+                        <figure class="partners-logo-card"><img src="https://insurance4life.s3.ap-south-1.amazonaws.com/ic-logos/general-insurance-companies/National.jpg" alt="National Insurance Company Limited" /></figure>
+                        <figure class="partners-logo-card"><img src="https://insurance4life.s3.ap-south-1.amazonaws.com/ic-logos/general-insurance-companies/Navi.jpg" alt="Navi General Insurance Limited" /></figure>
+                        <figure class="partners-logo-card"><img src="https://insurance4life.s3.ap-south-1.amazonaws.com/ic-logos/general-insurance-companies/New-India-Assurance.jpg" alt="New India Assurance" /></figure>
+                        <figure class="partners-logo-card"><img src="https://insurance4life.s3.ap-south-1.amazonaws.com/ic-logos/general-insurance-companies/Niva-Bupa.jpg" alt="Niva Bupa Health Insurance" /></figure>
+                        <figure class="partners-logo-card"><img src="https://insurance4life.s3.ap-south-1.amazonaws.com/ic-logos/general-insurance-companies/oriental-insurance.png" alt="The Oriental Insurance" /></figure>
+                        <figure class="partners-logo-card"><img src="https://insurance4life.s3.ap-south-1.amazonaws.com/ic-logos/general-insurance-companies/reliance.png" alt="Reliance General Insurance" /></figure>
+                        <figure class="partners-logo-card"><img src="https://insurance4life.s3.ap-south-1.amazonaws.com/ic-logos/general-insurance-companies/royal-sundaram.jpg" alt="Royal Sundaram General Insurance" /></figure>
+                        <figure class="partners-logo-card"><img src="https://insurance4life.s3.ap-south-1.amazonaws.com/ic-logos/general-insurance-companies/SBI-General.jpg" alt="SBI General Insurance" /></figure>
+                        <figure class="partners-logo-card"><img src="https://insurance4life.s3.ap-south-1.amazonaws.com/ic-logos/general-insurance-companies/Shriram.jpg" alt="Shriram General Insurance" /></figure>
+                        <figure class="partners-logo-card"><img src="https://insurance4life.s3.ap-south-1.amazonaws.com/ic-logos/general-insurance-companies/star-health.jpg" alt="Star Health Insurance" /></figure>
+                        <figure class="partners-logo-card"><img src="https://insurance4life.s3.ap-south-1.amazonaws.com/ic-logos/general-insurance-companies/tata-aig.jpg" alt="Tata AIG General Insurance" /></figure>
+                        <figure class="partners-logo-card"><img src="https://insurance4life.s3.ap-south-1.amazonaws.com/ic-logos/general-insurance-companies/Universal-Sompo.jpg" alt="Universal Sompo General Insurance" /></figure>
+                        <figure class="partners-logo-card"><img src="https://insurance4life.s3.ap-south-1.amazonaws.com/ic-logos/general-insurance-companies/Chola-Logo.png" alt="Chola MS Insurance" /></figure>
+                        <figure class="partners-logo-card"><img src="https://insurance4life.s3.ap-south-1.amazonaws.com/ic-logos/general-insurance-companies/kshema.jpg" alt="Kshema General Insurance" /></figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="faq-section section-space pt-0">
+            <div class="container">
+                <div class="text-center mb-3 mb-md-4">
+                    <p class="section-tag mb-2" data-aos="fade-up">Know why to choose Shrigoda</p>
+                    <h2 class="section-heading" data-aos="fade-up" data-aos-delay="100">Frequently Asked Questions About Insurances</h2>
+                </div>
+
+                <div class="accordion faq-accordion mx-auto" id="faqAccordion">
+                    <div class="accordion-item" data-aos="fade-up" data-aos-delay="60">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faqOne" aria-expanded="true" aria-controls="faqOne">
+                                What is Shrigoda Insurance Brokers, and how is it different from buying insurance
+                                directly from an insurer?
+                            </button>
+                        </h2>
+                        <div id="faqOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Shrigoda acts as an intermediary between customers and insurance companies. We compare
+                                insurers and
+                                recommend the best-fit policy based on your needs and budget.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item" data-aos="fade-up" data-aos-delay="100">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faqTwo" aria-expanded="false" aria-controls="faqTwo">
+                                Why should I use Shrigoda Insurance Broker instead of buying directly from an insurance
+                                company?
+                            </button>
+                        </h2>
+                        <div id="faqTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                As a broker we work for you, not for one insurer. You get unbiased advice, policy
+                                comparison,
+                                claim support, and full lifecycle assistance.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item" data-aos="fade-up" data-aos-delay="140">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faqThree" aria-expanded="false" aria-controls="faqThree">
+                                Do I have to pay extra fees for using an insurance broker's services?
+                            </button>
+                        </h2>
+                        <div id="faqThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Usually no. You pay the same premium; broker compensation is paid by the insurer.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item" data-aos="fade-up" data-aos-delay="180">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faqFour" aria-expanded="false" aria-controls="faqFour">
+                                How do I know if I am getting the best deal through an insurance broker?
+                            </button>
+                        </h2>
+                        <div id="faqFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                We evaluate plans across insurers and disclose options clearly so you can choose the
+                                most suitable
+                                coverage with transparent pricing.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item" data-aos="fade-up" data-aos-delay="220">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faqFive" aria-expanded="false" aria-controls="faqFive">
+                                Can you help me if I need to make a claim?
+                            </button>
+                        </h2>
+                        <div id="faqFive" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Yes. We help with claim filing, documentation, and coordination so your claim is
+                                smoother and
+                                faster.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item" data-aos="fade-up" data-aos-delay="260">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faqSix" aria-expanded="false" aria-controls="faqSix">
+                                What types of insurance policies can I buy from Shrigoda?
+                            </button>
+                        </h2>
+                        <div id="faqSix" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Health, life, motor, travel, home, and multiple business insurance products are
+                                available for
+                                individuals and companies.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item" data-aos="fade-up" data-aos-delay="300">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faqSeven" aria-expanded="false" aria-controls="faqSeven">
+                                How do I get started with purchasing insurance through your brokerage?
+                            </button>
+                        </h2>
+                        <div id="faqSeven" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Share basic details online or connect with our advisors. We compare plans, guide KYC,
+                                and help you
+                                complete the policy quickly.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item" data-aos="fade-up" data-aos-delay="340">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faqEight" aria-expanded="false" aria-controls="faqEight">
+                                What if I have additional questions after purchasing a policy?
+                            </button>
+                        </h2>
+                        <div id="faqEight" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Our support continues even after purchase. You can contact us for service requests,
+                                policy updates,
+                                and claim-related help anytime.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Decorative strip used in original design -->
+            <div class="faq-art" data-aos="zoom-in-up" data-aos-delay="120">
+                <img src="https://www.insurance4life.in/assets/images/revised-images/faq-bg.svg" alt="FAQ background" />
+                <p class="faq-thought thought-a" id="thought1"></p>
+                <p class="faq-thought thought-b" id="thought2"></p>
+                <p class="faq-thought thought-c" id="thought3"></p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer footer-ui-v2">
+        <div class="container">
+            <div class="footer-head d-flex flex-wrap justify-content-between align-items-center" data-aos="fade-up">
+                <img class="footer-logo" src="https://www.insurance4life.in/assets/images/sg-shrigoda-logo-white.svg"
+                    alt="Insurance4Life logo" />
+                <div class="footer-social-row">
+                    <a class="footer-social-btn" href="https://www.facebook.com/shrigodainsurance" target="_blank"
+                        rel="noopener noreferrer" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                    <a class="footer-social-btn" href="https://www.linkedin.com/company/insurance4life/" target="_blank"
+                        rel="noopener noreferrer" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://irdai.gov.in/" target="_blank" rel="noopener noreferrer">
+                        <img class="irdai-logo" src="https://www.insurance4life.in/assets/images/irda-logo.png"
+                            alt="IRDAI logo" />
+                    </a>
+                </div>
+            </div>
+
+            <div class="row row-cols-2 row-cols-lg-3 row-cols-xl-6 footer-categories">
+                <div class="col" data-aos="fade-up" data-aos-delay="50">
+                    <h3>Health Insurance</h3>
+                    <a href="#">New Policy</a>
+                    <a href="#">Portability</a>
+                    <a href="#">Top-up</a>
+                    <a href="#">Insurance Companies</a>
+                </div>
+                <div class="col" data-aos="fade-up" data-aos-delay="90">
+                    <h3>Motor Insurance</h3>
+                    <a href="#">Car</a>
+                    <a href="#">Bike</a>
+                    <a href="#">Goods Vehicle</a>
+                    <a href="#">Passenger Vehicle</a>
+                </div>
+                <div class="col" data-aos="fade-up" data-aos-delay="130">
+                    <h3>Life Insurance</h3>
+                    <a href="#">Life</a>
+                    <a href="#">Term Life</a>
+                    <a href="#">Investment Life</a>
+                    <a href="#">Child Education Plan</a>
+                </div>
+                <div class="col" data-aos="fade-up" data-aos-delay="170">
+                    <h3>Employee Benefits</h3>
+                    <a href="#">Group Mediclaim</a>
+                    <a href="#">Group Personal Accident</a>
+                    <a href="#">Group Term Life</a>
+                </div>
+                <div class="col" data-aos="fade-up" data-aos-delay="210">
+                    <h3>Business Insurance</h3>
+                    <a href="#">Fire & Burglary</a>
+                    <a href="#">Marine</a>
+                    <a href="#">Liability</a>
+                    <a href="#">Engineering</a>
+                </div>
+                <div class="col" data-aos="fade-up" data-aos-delay="250">
+                    <h3>Other Insurance</h3>
+                    <a href="#">Home</a>
+                    <a href="#">Travel</a>
+                    <a href="#">Rural</a>
+                    <a href="#">Pet</a>
+                </div>
+            </div>
+
+            <div class="footer-policy-strip" data-aos="fade-up" data-aos-delay="120">
+                <div class="d-flex flex-wrap justify-content-center">
+                    <a href="#">About Us</a>
+                    <a href="#">ISNP</a>
+                    <a href="#">Grievance Redressal</a>
+                    <a href="#">Cancellation & Refunds</a>
+                    <a href="#">Disclaimer</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">IRDAI License</a>
+                </div>
+            </div>
+
+            <div class="footer-legal" data-aos="fade-up" data-aos-delay="160">
+                <p>
+                    Shrigoda Insurance Brokers Limited (aka INSURANCE4LIFE)
+                </p>
+                <p>
+                    Registered Office - 1/1A, Biplabi Anukul Chandra Street, 3F/1, Kolkata - 700072 | Corporate Office
+                    - 203, Shivam Square, 4, Sahar Road, Andheri (E), Mumbai - 400069, Maharashtra, India
+                </p>
+                <p>
+                    Toll Free: 1800 572 3234 | Email ID: info@insurance4life.in | CIN: U67110WB2022PLC251176
+                </p>
+                <p>
+                    Shrigoda Insurance Brokers Limited is registered as a Direct Broker | Registration Code No. DB
+                    947/22 | Licence No. 830 | Valid till 07/07/2028 | License category - Direct Broker (Life &
+                    General)
+                </p>
+                <p class="legal-disclaimer">
+                    Visitors are hereby informed that their information submitted on the website may be shared with
+                    insurers. Product information is authentic and solely based on the information received from the
+                    insurers.
+                </p>
+            </div>
+            <div class="footer-copy" data-aos="fade-up" data-aos-delay="220">
+                (c) 1963-<span id="currentYear">2026</span> Shrigoda Insurance Brokers Limited. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <button id="scrollTopBtn" class="scroll-top-btn" type="button" aria-label="Back to top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- <script>
+        (function initAOS() {
+            function runAOS() {
+                if (!window.AOS) return false;
+                AOS.init({
+                    duration: 900,
+                    easing: "ease-in-out",
+                    once: false,
+                    offset: 80
+                });
+                AOS.refreshHard();
+                return true;
+            }
+
+            if (runAOS()) return;
+
+            const fallbackScript = document.createElement("script");
+            fallbackScript.src = "https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js";
+            fallbackScript.onload = runAOS;
+            document.body.appendChild(fallbackScript);
+
+            window.addEventListener("load", runAOS, { once: true });
+        })();
+    </script> -->
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
+

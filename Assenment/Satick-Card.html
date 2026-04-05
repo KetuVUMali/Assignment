@@ -1,0 +1,1464 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BeyondSure Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./assets/style/style.css" />
+</head>
+
+<body class="px-4">
+    <header class="topbar border-bottom">
+        <nav class="navbar navbar-expand-xl py-0 h-100">
+            <div class="container-fluid topbar-container">
+                <a class="navbar-brand me-4 top-logo" href="#">
+                    <img src="./assets/img/Logo.svg" alt="BeyondSure Logo" />
+                </a>
+
+                <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#mobileNavbar" aria-controls="mobileNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav top-nav mx-auto align-items-xl-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img src="./assets/img/Dashboard-icon.svg" alt="" class="top-nav-icon" />
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">
+                                <img src="./assets/img/enquiry-logo.svg" alt="" class="top-nav-icon" />
+                                <span>My Enquiries</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img src="./assets/img/my-polices.svg" alt="" class="top-nav-icon" />
+                                <span>My Policies</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img src="./assets/img/My-claim.svg" alt="" class="top-nav-icon" />
+                                <span>My Claims</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img src="./assets/img/My-renewal.svg" alt="" class="top-nav-icon" />
+                                <span>My Renewals</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img src="./assets/img/Help-and-support.svg" alt="" class="top-nav-icon" />
+                                <span>Help &amp; Support</span>
+                                <svg class="top-caret" width="10" height="6" viewBox="0 0 10 6" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="d-none d-xl-flex align-items-center gap-3">
+                    <button class="btn p-0 border-0 bg-transparent" type="button" aria-label="Notifications">
+                        <img src="./assets/img/Bell-Notification.svg" alt="" class="top-bell-icon" />
+                    </button>
+                    <a href="#" class="d-flex align-items-center gap-2 text-decoration-none">
+                        <div class="text-end">
+                            <h6 class="mb-0 profile-name">Shristi Kamble</h6>
+                            <p class="mb-0 profile-subtitle">Silver Membership</p>
+                        </div>
+                        <img src="./assets/img/Profile-photo.svg" alt="Profile Photo" class="profile-photo" />
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="secondary-header border-bottom">
+        <div class="container-fluid secondary-header-wrap d-flex align-items-center justify-content-between">
+            <div>
+                <h2 class="secondary-title mb-0">My Enquiries</h2>
+                <div class="secondary-meta">
+                    <span class="secondary-status">35 Potential Enquiry</span>
+                    <span class="secondary-text">for your review</span>
+                </div>
+            </div>
+            <div class="secondary-header-right d-flex align-items-center">
+                <div class="secondary-search me-2">
+                    <svg class="secondary-search-icon" width="30" height="30" viewBox="0 0 20 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path
+                            d="M14.1667 13.3333H13.7275L13.5717 13.1833C14.1325 12.5317 14.4692 11.6858 14.4692 10.7692C14.4692 8.7175 12.8217 7.07001 10.77 7.07001C8.71833 7.07001 7.07084 8.7175 7.07084 10.7692C7.07084 12.8208 8.71833 14.4683 10.77 14.4683C11.6867 14.4683 12.5325 14.1317 13.1842 13.5708L13.3342 13.7267V14.1658L16.8742 17.7058L17.7058 16.8742L14.1667 13.3333ZM10.77 13.3333C9.38001 13.3333 8.20667 12.16 8.20667 10.77C8.20667 9.38001 9.38001 8.20668 10.77 8.20668C12.16 8.20668 13.3333 9.38001 13.3333 10.77C13.3333 12.16 12.16 13.3333 10.77 13.3333Z"
+                            fill="#94A3B8" />
+                    </svg>
+                    <input type="text" class="form-control secondary-search-input"
+                        placeholder="Search by lead ID or customer..." />
+                </div>
+                <div class="secondary-count d-flex align-items-center justify-content-end">
+                    <span class="secondary-count-label">Show :</span>
+                    <span class="secondary-count-box">05</span>
+                    <span class="secondary-count-text">Enquiries</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileNavbar" aria-labelledby="mobileNavbarLabel">
+        <div class="offcanvas-header border-bottom">
+            <h5 class="offcanvas-title" id="mobileNavbarLabel">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="d-flex align-items-center gap-2 mb-3 pb-3 border-bottom">
+                <img src="./assets/img/Profile-photo.svg" alt="Profile Photo" class="profile-photo" />
+                <div>
+                    <h6 class="mb-0 profile-name">Shristi Kamble</h6>
+                    <p class="mb-0 profile-subtitle">Silver Membership</p>
+                </div>
+            </div>
+            <ul class="navbar-nav top-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="./assets/img/Dashboard-icon.svg" alt=""
+                            class="top-nav-icon" /><span>Dashboard</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"><img src="./assets/img/enquiry-logo.svg" alt=""
+                            class="top-nav-icon" /><span>My Enquiries</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="./assets/img/my-polices.svg" alt=""
+                            class="top-nav-icon" /><span>My Policies</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="./assets/img/My-claim.svg" alt=""
+                            class="top-nav-icon" /><span>My Claims</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="./assets/img/My-renewal.svg" alt=""
+                            class="top-nav-icon" /><span>My Renewals</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="./assets/img/Help-and-support.svg" alt=""
+                            class="top-nav-icon" /><span>Help &amp; Support</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container-fluid enquiries-layout">
+        <div class="d-lg-none filter-toggle-wrap">
+            <button class="btn filter-toggle-btn" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#filtersOffcanvas" aria-controls="filtersOffcanvas">
+                Filters
+            </button>
+        </div>
+
+        <div class="row g-3 g-xl-4 align-items-start p-0 p-lg-3">
+            <aside class="col-12 col-lg-auto filters-col offcanvas-lg offcanvas-start" tabindex="-1"
+                id="filtersOffcanvas" aria-labelledby="filtersHeading">
+                <div class="filters-panel">
+                    <div class="filters-head">
+                        <div class="d-flex align-items-center gap-2">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <path d="M4 7H20M7 12H17M10 17H14" stroke="#0A8A2A" stroke-width="2"
+                                    stroke-linecap="round" />
+                            </svg>
+                            <span id="filtersHeading">FILTERS</span>
+                        </div>
+                        <div class="filters-head-actions">
+                            <button class="btn p-0 border-0 bg-transparent clear-all-btn" type="button">
+                                CLEAR ALL
+                            </button>
+                            <button class="btn-close filters-head-close d-lg-none" type="button"
+                                data-bs-dismiss="offcanvas" data-bs-target="#filtersOffcanvas"
+                                aria-label="Close filters"></button>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <h6 class="filter-group-title">INSURANCE TYPE</h6>
+                        <div class="filter-list filter-list-scroll">
+                            <label class="filter-check"><input type="checkbox" /><span>Health</span></label>
+                            <label class="filter-check"><input type="checkbox" /><span>Portability Health</span></label>
+                            <label class="filter-check"><input type="checkbox" /><span>Top Up Health</span></label>
+                            <label class="filter-check"><input type="checkbox" /><span>Bike</span></label>
+                            <label class="filter-check"><input type="checkbox" /><span>Motor</span></label>
+                            <div class="scroll-guide"><span></span></div>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <h6 class="filter-group-title">ENQUIRY STATUS</h6>
+                        <div class="filter-list filter-list-scroll">
+                            <label class="filter-check"><input type="checkbox" /><span>Quote Viewed</span></label>
+                            <label class="filter-check"><input type="checkbox" /><span>KYC Details</span></label>
+                            <label class="filter-check"><input type="checkbox" /><span>Insured Details</span></label>
+                            <label class="filter-check"><input type="checkbox" /><span>Proposal Details</span></label>
+                            <label class="filter-check"><input type="checkbox" /><span>Policy Features</span></label>
+                            <div class="scroll-guide"><span></span></div>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <h6 class="filter-group-title">POLICY TYPE</h6>
+                        <div class="filter-list pe-0">
+                            <label class="filter-check"><input type="checkbox" /><span>Self</span></label>
+                            <label class="filter-check"><input type="checkbox" /><span>Family Floater</span></label>
+                            <label class="filter-check"><input type="checkbox" /><span>Multi-individual</span></label>
+                            <label class="filter-check"><input type="checkbox" /><span>Group</span></label>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <h6 class="filter-group-title">LEAD TYPE</h6>
+                        <div class="filter-list pe-0">
+                            <label class="filter-check"><input type="checkbox" /><span>Online</span></label>
+                            <label class="filter-check"><input type="checkbox" /><span>Offline</span></label>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <h6 class="filter-group-title">START DATE</h6>
+                        <input type="text" class="form-control filter-input" value="01 / 12 / 2025" />
+                    </div>
+
+                    <div class="filter-group">
+                        <h6 class="filter-group-title">END DATE</h6>
+                        <input type="text" class="form-control filter-input" value="15 / 03 / 2026" />
+                    </div>
+
+                    <div class="filter-group pb-3">
+                        <h6 class="filter-group-title">PREMIUM RANGE</h6>
+                        <div class="premium-range-wrap" id="premiumRange">
+                            <div class="premium-badges">
+                                <span class="premium-badge premium-badge-min">500</span>
+                                <span class="premium-badge premium-badge-max">5L</span>
+                            </div>
+                            <div class="premium-track">
+                                <span class="premium-fill"></span>
+                                <span class="premium-handle premium-handle-start"></span>
+                                <span class="premium-handle premium-handle-end"></span>
+                                <input type="range" class="premium-range-input premium-range-input-min" min="500"
+                                    max="500000" step="500" value="500" aria-label="Minimum premium" />
+                                <input type="range" class="premium-range-input premium-range-input-max" min="500"
+                                    max="500000" step="500" value="120000" aria-label="Maximum premium" />
+                            </div>
+                            <div class="premium-minmax-head">
+                                <span>MIN (&#8377;)</span>
+                                <span>MAX (&#8377;)</span>
+                            </div>
+                            <div class="row g-2">
+                                <div class="col-6">
+                                    <input type="text"
+                                        class="form-control filter-input filter-input-premium premium-min-input"
+                                        value="500" inputmode="numeric" />
+                                </div>
+                                <div class="col-6">
+                                    <input type="text"
+                                        class="form-control filter-input filter-input-premium premium-max-input"
+                                        value="1,20,000" inputmode="numeric" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="filters-footer">
+                        <button class="btn filter-apply-btn w-100" type="button">
+                            Apply Filters
+                        </button>
+                    </div>
+                </div>
+            </aside>
+
+            <main class="col enquiry-cards-area">
+                <div class="lead-list" id="enquiryCardList">
+                    <article class="lead-card">
+                        <span class="lead-stage lead-stage-gray">Quote Viewed</span>
+                        <div class="lead-card-inner">
+                            <div class="lead-top">
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="lead-avatar">
+                                        <img src="./assets/img/Child-Education-Plan.svg" alt="" class="lead-avatar-img" />
+                                    </div>
+                                    <div>
+                                        <p class="lead-id mb-0">#CE00001-STL0046-NB</p>
+                                        <h3 class="lead-title mb-0">Child Education Plan</h3>
+                                        <p class="lead-subtitle mb-0 fw-semibold">For Daughter (07)</p>
+                                    </div>
+                                </div>
+                                <img src="./assets/img/beyond-sure.svg" alt="" class="lead-brand-logo" />
+                            </div>
+                            <div class="lead-body">
+                                <div class="lead-body-left">
+                                    <div class="lead-metrics">
+                            <div class="metric-item">
+                                <span class="metric-label">Customer Name</span>
+                                <strong class="metric-value">Jayendra Suresh Naik</strong>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">Location</span>
+                                <strong class="metric-value">NA</strong>
+                            </div>
+                            <div class="metric-item with-divider">
+                                <span class="metric-label">Enquiry Date</span>
+                                <strong class="metric-value">28 Mar, 2026  |  13:00 PM</strong>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">Cover Amount</span>
+                                <strong class="metric-value">NA</strong>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">Policy Term</span>
+                                <strong class="metric-value">NA</strong>
+                            </div>
+                                    </div>
+                                    <div class="lead-footer pb-1">
+                                        <div class="tag-row">
+                                    <span class="lead-chip">Inbuilt Life Cover</span>
+                                    <span class="lead-chip">Premium Waver</span>
+                                        </div>
+                                        <div class="lead-actions">
+                                            <button class="btn view-more-btn" type="button">View more details</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="lead-body-right">
+                                    <button class="btn lead-cta-btn" type="button">Continue</button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="lead-card">
+                        <span class="lead-stage lead-stage-green">KYC Details</span>
+                        <div class="lead-card-inner">
+                            <div class="lead-top">
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="lead-avatar">
+                                        <img src="./assets/img/eTouch-II.svg" alt="" class="lead-avatar-img" />
+                                    </div>
+                                    <div>
+                                        <p class="lead-id mb-0">#IL00003-STL0024-NB</p>
+                                        <h3 class="lead-title mb-0">eTouch II</h3>
+                                        <p class="lead-subtitle mb-0 fw-semibold">Investment Life Insurance for Self (33), Female</p>
+                                    </div>
+                                </div>
+                                <img src="./assets/img/bajaj-1.svg" alt="" class="lead-brand-logo lead-brand-logo-sm" />
+                            </div>
+                            <div class="lead-body">
+                                <div class="lead-body-left">
+                                    <div class="lead-metrics lead-metrics-6">
+                            <div class="metric-item">
+                                <span class="metric-label">Project Category</span>
+                                <strong class="metric-value">Jayendra Suresh Naik</strong>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">Location</span>
+                                <strong class="metric-value">CG, 495115</strong>
+                            </div>
+                            <div class="metric-item with-divider">
+                                <span class="metric-label">Enquiry Date</span>
+                                <strong class="metric-value">27 Mar, 2026  |  12:00 PM</strong>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">Cover Amount</span>
+                                <strong class="metric-value">&#8377; 15,00,000</strong>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">PT</span>
+                                <strong class="metric-value">30 Yrs</strong>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">PPT</span>
+                                <strong class="metric-value">5 Yrs</strong>
+                            </div>
+                                    </div>
+                                    <div class="lead-footer pb-1">
+                                        <div class="tag-row">
+                                    <span class="lead-chip">Life Coverage</span>
+                                    <span class="lead-chip">Partial Withdrawals</span>
+                                        </div>
+                                        <div class="lead-actions">
+                                            <button class="btn view-more-btn" type="button">View more details</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="lead-body-right">
+                                    <button class="btn lead-cta-btn" type="button">&#8377; 7,286</button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="lead-card">
+                        <span class="lead-stage lead-stage-purple">Policy Features</span>
+                        <div class="lead-card-inner">
+                            <div class="lead-top">
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="lead-avatar">
+                                        <img src="./assets/img/Saral-Jeevan-Bima.svg" alt="" class="lead-avatar-img" />
+                                    </div>
+                                    <div>
+                                        <p class="lead-id mb-0">#IL00006-STL0044-NB</p>
+                                        <h3 class="lead-title mb-0">Saral Jeevan Bima</h3>
+                                        <p class="lead-subtitle mb-0 fw-semibold">Life Insurance for Self (33), Spouse (35)</p>
+                                    </div>
+                                </div>
+                                <img src="./assets/img/sbi-1.svg" alt="" class="lead-brand-logo" />
+                            </div>
+                            <div class="lead-body">
+                                <div class="lead-body-left">
+                                    <div class="lead-metrics lead-metrics-6">
+                            <div class="metric-item">
+                                <span class="metric-label">Project Category</span>
+                                <strong class="metric-value">Karthikeyan Subramanian</strong>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">Location</span>
+                                <strong class="metric-value">CG, 495115</strong>
+                            </div>
+                            <div class="metric-item with-divider">
+                                <span class="metric-label">Enquiry Date</span>
+                                <strong class="metric-value">26 Mar, 2026  |  14:00 PM</strong>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">Cover Amount</span>
+                                <strong class="metric-value">&#8377; 5,00,000</strong>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">PT</span>
+                                <strong class="metric-value">30 Yrs</strong>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">PPT</span>
+                                <strong class="metric-value">5 Yrs</strong>
+                            </div>
+                                    </div>
+                                    <div class="lead-footer pb-1">
+                                        <div class="tag-row">
+                                    <span class="lead-chip">Accidental Death Benefit</span>
+                                        </div>
+                                        <div class="lead-actions">
+                                            <button class="btn view-more-btn" type="button">View more details</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="lead-body-right">
+                                    <button class="btn lead-cta-btn" type="button">&#8377; 5,586</button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="lead-card">
+                        <span class="lead-stage lead-stage-blue">Insured Details</span>
+                        <div class="lead-card-inner">
+                            <div class="lead-top">
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="lead-avatar">
+                                        <img src="./assets/img/Shriram-Life-Online-Term-Plan.svg" alt="" class="lead-avatar-img" />
+                                    </div>
+                                    <div>
+                                        <p class="lead-id mb-0">#RP00001-STL0021-NB</p>
+                                        <h3 class="lead-title mb-0">Shriram Life Online Term Plan</h3>
+                                        <p class="lead-subtitle mb-0 fw-semibold">Retirement Plan for Self (33), Female</p>
+                                    </div>
+                                </div>
+                                <img src="./assets/img/Shiram-genral-ins.svg" alt="" class="lead-brand-logo" />
+                            </div>
+                            <div class="lead-body">
+                                <div class="lead-body-left">
+                                    <div class="lead-metrics">
+                            <div class="metric-item">
+                                <span class="metric-label">Customer Name</span>
+                                <strong class="metric-value">Jayendra Suresh Naik</strong>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">Location</span>
+                                <strong class="metric-value">Margao, 403601</strong>
+                            </div>
+                            <div class="metric-item with-divider">
+                                <span class="metric-label">Enquiry Date</span>
+                                <strong class="metric-value">09 Feb, 2026  |  15:00 PM</strong>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">Cover Amount</span>
+                                <strong class="metric-value">&#8377; 10,00,000</strong>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">Policy Term</span>
+                                <strong class="metric-value">10 Yrs</strong>
+                            </div>
+                                    </div>
+                                    <div class="lead-footer pb-1">
+                                        <div class="tag-row">
+                                    <span class="lead-chip">Systematic Withdrawal Facility</span>
+                                        </div>
+                                        <div class="lead-actions">
+                                            <button class="btn view-more-btn" type="button">View more details</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="lead-body-right">
+                                    <button class="btn lead-cta-btn" type="button">&#8377; 6,879</button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="lead-card">
+                        <span class="lead-stage lead-stage-blue">Proposal Details</span>
+                        <div class="lead-card-inner">
+                            <div class="lead-top">
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="lead-avatar">
+                                        <img src="./assets/img/Saral-Jeevan-Bima.svg" alt="" class="lead-avatar-img" />
+                                    </div>
+                                    <div>
+                                        <p class="lead-id mb-0">#TL00001-STL0029-NB</p>
+                                        <h3 class="lead-title mb-0">Gen 2 Gen Protect</h3>
+                                        <p class="lead-subtitle mb-0 fw-semibold">Teem Life for Self (33), Female</p>
+                                    </div>
+                                </div>
+                                <img src="./assets/img/Kotak-bank.svg" alt="" class="lead-brand-logo lead-brand-logo-sm" />
+                            </div>
+                            <div class="lead-body">
+                                <div class="lead-body-left">
+                                    <div class="lead-metrics lead-metrics-6">
+                            <div class="metric-item">
+                                <span class="metric-label">Project Category</span>
+                                <strong class="metric-value">Karthikeyan Subramanian</strong>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">Location</span>
+                                <strong class="metric-value">CG, 495115</strong>
+                            </div>
+                            <div class="metric-item with-divider">
+                                <span class="metric-label">Enquiry Date</span>
+                                <strong class="metric-value">09 Feb, 2026  |  12:00 PM</strong>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">Cover Amount</span>
+                                <strong class="metric-value">&#8377; 25,00,000</strong>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">PT</span>
+                                <strong class="metric-value">30 Yrs</strong>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">PPT</span>
+                                <strong class="metric-value">5 Yrs</strong>
+                            </div>
+                                    </div>
+                                    <div class="lead-footer pb-1">
+                                        <div class="tag-row">
+                                    <span class="lead-chip">Critical Illness Benefit</span>
+                                    <span class="lead-chip">Terminal Illness Benefit</span>
+                                        </div>
+                                        <div class="lead-actions">
+                                            <button class="btn view-more-btn" type="button">View more details</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="lead-body-right">
+                                    <button class="btn lead-cta-btn" type="button">&#8377; 7,286</button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="lead-card">
+                        <span class="lead-stage lead-stage-blue">Nominee Details</span>
+                        <div class="lead-card-inner">
+                            <div class="lead-top">
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="lead-avatar">
+                                        <img src="./assets/img/Lifeline-Classic.svg" alt="" class="lead-avatar-img" />
+                                    </div>
+                                    <div>
+                                        <p class="lead-id mb-0">#HE00009-CUS0815-SIBL-NB</p>
+                                        <h3 class="lead-title mb-0">Lifeline Classic</h3>
+                                        <p class="lead-subtitle mb-0 fw-semibold">Health Insurance for Self (33), Spouse (35), Mother in Law (77), Father in Law (80)</p>
+                                    </div>
+                                </div>
+                                <img src="./assets/img/sbigenerak-1.svg" alt="" class="lead-brand-logo" />
+                            </div>
+                            <div class="lead-body">
+                                <div class="lead-body-left">
+                                    <div class="lead-metrics">
+                            <div class="metric-item">
+                                <span class="metric-label">Customer Name</span>
+                                <strong class="metric-value">Shristi Kamble</strong>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">Location</span>
+                                <strong class="metric-value">Virar, 401303</strong>
+                            </div>
+                            <div class="metric-item with-divider">
+                                <span class="metric-label">Enquiry Date</span>
+                                <strong class="metric-value">08 Feb, 2026  |  11:00 AM</strong>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">Cover Amount</span>
+                                <strong class="metric-value">&#8377; 5,00,000</strong>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">Policy Term</span>
+                                <strong class="metric-value">1 Yrs</strong>
+                            </div>
+                                    </div>
+                                    <div class="lead-footer pb-1">
+                                        <div class="tag-row">
+                                    <span class="lead-chip">Cumulative Bonus</span>
+                                    <span class="lead-chip">Unlimited E-Consultations</span>
+                                        </div>
+                                        <div class="lead-actions">
+                                            <button class="btn view-more-btn" type="button">View more details</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="lead-body-right">
+                                    <button class="btn lead-cta-btn" type="button">&#8377; 5000</button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="lead-card">
+                        <span class="lead-stage lead-stage-purple">Portability</span>
+                        <div class="lead-card-inner">
+                            <div class="lead-top">
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="lead-avatar">
+                                        <img src="./assets/img/Lifeline-Classic.svg" alt="" class="lead-avatar-img" />
+                                    </div>
+                                    <div>
+                                        <p class="lead-id mb-0">#HE00230-STL0029-NBM</p>
+                                        <h3 class="lead-title mb-0">Lifeline Classic</h3>
+                                        <p class="lead-subtitle mb-0 fw-semibold">Multi-year Health Insurance for Self (33), Female</p>
+                                    </div>
+                                </div>
+                                <img src="./assets/img/aditya-birla-2.svg" alt="" class="lead-brand-logo" />
+                            </div>
+                            <div class="lead-body">
+                                <div class="lead-body-left">
+                                    <div class="lead-metrics">
+                            <div class="metric-item">
+                                <span class="metric-label">Customer Name</span>
+                                <strong class="metric-value">Shristi Kamble</strong>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">Location</span>
+                                <strong class="metric-value">Margon, 401303</strong>
+                            </div>
+                            <div class="metric-item with-divider">
+                                <span class="metric-label">Enquiry Date</span>
+                                <strong class="metric-value">08 Feb, 2026  |  15:00 PM</strong>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">Cover Amount</span>
+                                <strong class="metric-value">&#8377; 15,00,000</strong>
+                            </div>
+                                    </div>
+                                    <div class="lead-footer pb-1">
+                                        <div class="tag-row">
+                                    <span class="lead-chip">Premium Lock-in</span>
+                                        </div>
+                                        <div class="lead-actions">
+                                            <button class="btn view-more-btn" type="button">View more details</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="lead-body-right">
+                                    <button class="btn lead-cta-btn" type="button">&#8377; 15,300</button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="lead-card">
+                        <span class="lead-stage lead-stage-red">Proposal Details</span>
+                        <div class="lead-card-inner">
+                            <div class="lead-top">
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="lead-avatar">
+                                        <img src="./assets/img/Care-Advantage.svg" alt="" class="lead-avatar-img" />
+                                    </div>
+                                    <div>
+                                        <p class="lead-id mb-0">#HL00009-STL0029-NB</p>
+                                        <h3 class="lead-title mb-0">Care Advantage</h3>
+                                        <p class="lead-subtitle mb-0 fw-semibold">Portability Health fpr Spouse (35), Mother in Law (67)</p>
+                                    </div>
+                                </div>
+                                <img src="./assets/img/Care-Helth.svg" alt="" class="lead-brand-logo" />
+                            </div>
+                            <div class="lead-body">
+                                <div class="lead-body-left">
+                                    <div class="lead-metrics">
+                            <div class="metric-item">
+                                <span class="metric-label">Customer Name</span>
+                                <strong class="metric-value">Shristi Kamble</strong>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">Location</span>
+                                <strong class="metric-value">Delhi, 411105</strong>
+                            </div>
+                            <div class="metric-item with-divider">
+                                <span class="metric-label">Enquiry Date</span>
+                                <strong class="metric-value">07 Mar, 2026  |  20:00 PM</strong>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">Cover Amount</span>
+                                <strong class="metric-value">&#8377; 10,00,000</strong>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">Porting Into</span>
+                                <strong class="metric-value">Niva-Bupa</strong>
+                            </div>
+                                    </div>
+                                    <div class="lead-footer pb-1">
+                                        <div class="tag-row">
+                                    <span class="lead-chip">Coverage Continuity</span>
+                                    <span class="lead-chip">No Claim Rent Limit</span>
+                                        </div>
+                                        <div class="lead-actions">
+                                            <button class="btn view-more-btn" type="button">View more details</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="lead-body-right">
+                                    <button class="btn lead-cta-btn" type="button">&#8377; 5,000</button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="lead-card">
+                        <span class="lead-stage lead-stage-red">Quotation Sent</span>
+                        <div class="lead-card-inner">
+                            <div class="lead-top">
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="lead-avatar">
+                                        <img src="./assets/img/Lifeline-Classic.svg" alt="" class="lead-avatar-img" />
+                                    </div>
+                                    <div>
+                                        <p class="lead-id mb-0">#BK00070-CLU0095-SIBL-NB</p>
+                                        <h3 class="lead-title mb-0">Lifeline Classic</h3>
+                                        <p class="lead-subtitle mb-0 fw-semibold">Renewal Health Insurance for Self (33), Female</p>
+                                    </div>
+                                </div>
+                                <img src="./assets/img/aditya-birla-2.svg" alt="" class="lead-brand-logo" />
+                            </div>
+                            <div class="lead-body">
+                                <div class="lead-body-left">
+                                    <div class="lead-metrics">
+                            <div class="metric-item">
+                                <span class="metric-label">Customer Name</span>
+                                <strong class="metric-value">Shristi Kamble</strong>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">Location</span>
+                                <strong class="metric-value">Mumbai, 400603</strong>
+                            </div>
+                            <div class="metric-item with-divider">
+                                <span class="metric-label">Enquiry Date</span>
+                                <strong class="metric-value">06 Feb, 2026  |  15:00 PM</strong>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">Cover Amount</span>
+                                <strong class="metric-value">&#8377; 1,00,000</strong>
+                            </div>
+                                    </div>
+                                    <div class="lead-footer pb-1">
+                                        <div class="tag-row">
+                                    <span class="lead-chip">50+ Network Hospitals</span>
+                                    <span class="lead-chip">No Room Rent Limit</span>
+                                    <span class="lead-note">Previous Policy Expiry Date : 14 Apr, 2026</span>
+                                        </div>
+                                        <div class="lead-actions">
+                                            <button class="btn view-more-btn" type="button">View more details</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="lead-body-right">
+                                    <button class="btn lead-cta-btn" type="button">&#8377; 22,987</button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="lead-card">
+                        <span class="lead-stage lead-stage-purple">Cheque Collected</span>
+                        <div class="lead-card-inner">
+                            <div class="lead-top">
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="lead-avatar">
+                                        <img src="./assets/img/Lifeline-Classic.svg" alt="" class="lead-avatar-img" />
+                                    </div>
+                                    <div>
+                                        <p class="lead-id mb-0">#BK00070-CLU0095-SIBL-NB</p>
+                                        <h3 class="lead-title mb-0">Aspire</h3>
+                                        <p class="lead-subtitle mb-0 fw-semibold">Top-up Health for Spouse (35), Son(11), Daughter (10)</p>
+                                    </div>
+                                </div>
+                                <img src="./assets/img/niva.svg" alt="" class="lead-brand-logo" />
+                            </div>
+                            <div class="lead-body">
+                                <div class="lead-body-left">
+                                    <div class="lead-metrics">
+                            <div class="metric-item">
+                                <span class="metric-label">Customer Name</span>
+                                <strong class="metric-value">Shristi Kamble</strong>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">Location</span>
+                                <strong class="metric-value">Margon, 400603</strong>
+                            </div>
+                            <div class="metric-item with-divider">
+                                <span class="metric-label">Enquiry Date</span>
+                                <strong class="metric-value">07 Feb, 2026  |  15:00 PM</strong>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">Cover Amount</span>
+                                <strong class="metric-value">&#8377; 3,00,000</strong>
+                            </div>
+                                    </div>
+                                    <div class="lead-footer pb-1">
+                                        <div class="tag-row">
+                                    <span class="lead-chip">Post-hospitalization Benefit</span>
+                                        </div>
+                                        <div class="lead-actions">
+                                            <button class="btn view-more-btn" type="button">View more details</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="lead-body-right">
+                                    <button class="btn lead-cta-btn" type="button">&#8377; 5,000</button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="lead-card">
+                        <span class="lead-stage lead-stage-gray">Policy Features</span>
+                        <div class="lead-card-inner">
+                            <div class="lead-top">
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="lead-avatar">
+                                        <img src="./assets/img/Comprehensive-Plan.svg" alt="" class="lead-avatar-img" />
+                                    </div>
+                                    <div>
+                                        <p class="lead-id mb-0">#CR00082-CLU0095-SIBL-NB</p>
+                                        <h3 class="lead-title mb-0">Comprehensive Plan</h3>
+                                        <p class="lead-subtitle mb-0 fw-semibold">Motor - Four Wheeler Insurance | MH-49-UE-7854</p>
+                                    </div>
+                                </div>
+                                <img src="./assets/img/ICIC.svg" alt="" class="lead-brand-logo" />
+                            </div>
+                            <div class="lead-body">
+                                <div class="lead-body-left">
+                                    <div class="lead-metrics lead-metrics-6">
+                            <div class="metric-item">
+                                <span class="metric-label">Customer Name</span>
+                                <strong class="metric-value">Jayendra Suresh Naik</strong>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">Location</span>
+                                <strong class="metric-value">Mumbai, 400603</strong>
+                            </div>
+                            <div class="metric-item with-divider">
+                                <span class="metric-label">Enquiry Date</span>
+                                <strong class="metric-value">07 Feb, 2026  |  08:09 AM</strong>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">IDV</span>
+                                <strong class="metric-value">&#8377; 5,00,000</strong>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">CPA</span>
+                                <strong class="metric-value">Yes</strong>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">NCB</span>
+                                <strong class="metric-value">25%</strong>
+                            </div>
+                                    </div>
+                                    <div class="lead-footer pb-1">
+                                        <div class="tag-row">
+                                    <span class="lead-chip">Zero Depreciation</span>
+                                    <span class="lead-chip">Road Side Assistance</span>
+                                        </div>
+                                        <div class="lead-actions">
+                                            <button class="btn view-more-btn" type="button">View more details</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="lead-body-right">
+                                    <button class="btn lead-cta-btn" type="button">&#8377; 7,567</button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="lead-card">
+                        <span class="lead-stage lead-stage-purple">Proposar Summary</span>
+                        <div class="lead-card-inner">
+                            <div class="lead-top">
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="lead-avatar">
+                                        <img src="./assets/img/Third-Party-Plan.svg" alt="" class="lead-avatar-img" />
+                                    </div>
+                                    <div>
+                                        <p class="lead-id mb-0">#BK00070-CLU0095-SIBL-NB</p>
+                                        <h3 class="lead-title mb-0">Third Party Plan</h3>
+                                        <p class="lead-subtitle mb-0 fw-semibold">Motor - Two Wheeler Insurance | MH-48-EJ-3186</p>
+                                    </div>
+                                </div>
+                                <img src="./assets/img/sf.svg" alt="" class="lead-brand-logo" />
+                            </div>
+                            <div class="lead-body">
+                                <div class="lead-body-left">
+                                    <div class="lead-metrics lead-metrics-6">
+                            <div class="metric-item">
+                                <span class="metric-label">Customer Name</span>
+                                <strong class="metric-value">Jayendra Suresh Naik</strong>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">Location</span>
+                                <strong class="metric-value">Mumbai, 400603</strong>
+                            </div>
+                            <div class="metric-item with-divider">
+                                <span class="metric-label">Enquiry Date</span>
+                                <strong class="metric-value">06 Feb, 2026  |  08:09 AM</strong>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">IDV</span>
+                                <strong class="metric-value">&#8377; 2,50,000</strong>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">CPA</span>
+                                <strong class="metric-value">Yes</strong>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">NCB</span>
+                                <strong class="metric-value">20%</strong>
+                            </div>
+                                    </div>
+                                    <div class="lead-footer pb-1">
+                                        <div class="tag-row">
+                                    <span class="lead-chip">Zero Depreciation</span>
+                                    <span class="lead-chip">Road Side Assistance</span>
+                                    <span class="lead-note">Previous Policy Expiry Date : 14 Apr, 2026</span>
+                                        </div>
+                                        <div class="lead-actions">
+                                            <button class="btn view-more-btn" type="button">View more details</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="lead-body-right">
+                                    <button class="btn lead-cta-btn" type="button">&#8377; 748</button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="lead-card">
+                        <span class="lead-stage lead-stage-gray">Quote Viewed</span>
+                        <div class="lead-card-inner">
+                            <div class="lead-top">
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="lead-avatar">
+                                        <img src="./assets/img/Goods-Carrying-Vehicle.svg" alt="" class="lead-avatar-img" />
+                                    </div>
+                                    <div>
+                                        <p class="lead-id mb-0">#GC00001-STL0046-NB</p>
+                                        <h3 class="lead-title mb-0">Goods Carrying Vehicle</h3>
+                                        <p class="lead-subtitle mb-0 fw-semibold">MH-48-EJ-3186 : Honda Activa Disc Brake</p>
+                                    </div>
+                                </div>
+                                <img src="./assets/img/beyond-sure.svg" alt="" class="lead-brand-logo" />
+                            </div>
+                            <div class="lead-body">
+                                <div class="lead-body-left">
+                                    <div class="lead-metrics lead-metrics-6">
+                            <div class="metric-item">
+                                <span class="metric-label">Customer Name</span>
+                                <strong class="metric-value">Jayendra Suresh Naik</strong>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">Location</span>
+                                <strong class="metric-value">NA</strong>
+                            </div>
+                            <div class="metric-item with-divider">
+                                <span class="metric-label">Enquiry Date</span>
+                                <strong class="metric-value">05 Feb, 2026  |  08:09 AM</strong>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">IDV</span>
+                                <strong class="metric-value">NA</strong>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">CPA</span>
+                                <strong class="metric-value">NA</strong>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">NCB</span>
+                                <strong class="metric-value">0</strong>
+                            </div>
+                                    </div>
+                                    <div class="lead-footer pb-1">
+                                        <div class="tag-row">
+                                    <span class="lead-chip">Zero Depreciation</span>
+                                    <span class="lead-chip">Road Side Assistance</span>
+                                        </div>
+                                        <div class="lead-actions">
+                                            <button class="btn view-more-btn" type="button">View more details</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="lead-body-right">
+                                    <button class="btn lead-cta-btn" type="button">Continue</button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="lead-card">
+                        <span class="lead-stage lead-stage-green">Payment Gateway</span>
+                        <div class="lead-card-inner">
+                            <div class="lead-top">
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="lead-avatar">
+                                        <img src="./assets/img/Comprehensive-Plan.svg" alt="" class="lead-avatar-img" />
+                                    </div>
+                                    <div>
+                                        <p class="lead-id mb-0">#PC00111-CUS0243-SIBL-NB</p>
+                                        <h3 class="lead-title mb-0">Bundle Plan (1 Year OD + 3 Years TP)</h3>
+                                        <p class="lead-subtitle mb-0 fw-semibold">Motor - PCV Insurance | DL-09-ER-1456</p>
+                                    </div>
+                                </div>
+                                <img src="./assets/img/digit-1.svg" alt="" class="lead-brand-logo" />
+                            </div>
+                            <div class="lead-body">
+                                <div class="lead-body-left">
+                                    <div class="lead-metrics lead-metrics-6">
+                            <div class="metric-item">
+                                <span class="metric-label">Customer Name</span>
+                                <strong class="metric-value">Jayendra Suresh Naik</strong>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">Location</span>
+                                <strong class="metric-value">Mumbai, 400603</strong>
+                            </div>
+                            <div class="metric-item with-divider">
+                                <span class="metric-label">Enquiry Date</span>
+                                <strong class="metric-value">04 Feb, 2026  |  08:09 AM</strong>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">IDV</span>
+                                <strong class="metric-value">&#8377; 8,00,000</strong>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">CPA</span>
+                                <strong class="metric-value">Yes</strong>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">NCB</span>
+                                <strong class="metric-value">20%</strong>
+                            </div>
+                                    </div>
+                                    <div class="lead-footer pb-1">
+                                        <div class="tag-row">
+                                    <span class="lead-chip">Zero Depreciation</span>
+                                    <span class="lead-chip">Road Side Assistance</span>
+                                        </div>
+                                        <div class="lead-actions">
+                                            <button class="btn view-more-btn" type="button">View more details</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="lead-body-right">
+                                    <button class="btn lead-cta-btn" type="button">&#8377; 7,689</button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="lead-card">
+                        <span class="lead-stage lead-stage-blue">Vehical Detailes</span>
+                        <div class="lead-card-inner">
+                            <div class="lead-top">
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="lead-avatar">
+                                        <img src="./assets/img/Tractor.svg" alt="" class="lead-avatar-img" />
+                                    </div>
+                                    <div>
+                                        <p class="lead-id mb-0">#PC00111-CUS0243-SIBL-NB</p>
+                                        <h3 class="lead-title mb-0">Bundle Plan (1 Year OD + 3 Years TP)</h3>
+                                        <p class="lead-subtitle mb-0 fw-semibold">Misc. D Vehicle Plan | AP-05-TA-6123 : Eicher PRO 6025 (65 Tonne GVW)-Diesel)</p>
+                                    </div>
+                                </div>
+                                <img src="./assets/img/digit-1.svg" alt="" class="lead-brand-logo" />
+                            </div>
+                            <div class="lead-body">
+                                <div class="lead-body-left">
+                                    <div class="lead-metrics lead-metrics-6">
+                            <div class="metric-item">
+                                <span class="metric-label">Customer Name</span>
+                                <strong class="metric-value">Jayendra Suresh Naik</strong>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">Location</span>
+                                <strong class="metric-value">Mumbai, 400603</strong>
+                            </div>
+                            <div class="metric-item with-divider">
+                                <span class="metric-label">Enquiry Date</span>
+                                <strong class="metric-value">04 Feb, 2026  |  08:09 AM</strong>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">IDV</span>
+                                <strong class="metric-value">&#8377; 8,00,000</strong>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">CPA</span>
+                                <strong class="metric-value">Yes</strong>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">NCB</span>
+                                <strong class="metric-value">20%</strong>
+                            </div>
+                                    </div>
+                                    <div class="lead-footer pb-1">
+                                        <div class="tag-row">
+                                    <span class="lead-chip">Zero Depreciation</span>
+                                    <span class="lead-chip">Road Side Assistance</span>
+                                        </div>
+                                        <div class="lead-actions">
+                                            <button class="btn view-more-btn" type="button">View more details</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="lead-body-right">
+                                    <button class="btn lead-cta-btn lead-cta-btn-red" type="button">&#8377; 7,689</button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="lead-card">
+                        <span class="lead-stage lead-stage-blue">Medical Details</span>
+                        <div class="lead-card-inner">
+                            <div class="lead-top">
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="lead-avatar">
+                                        <img src="./assets/img/Mosqi.svg" alt="" class="lead-avatar-img" />
+                                    </div>
+                                    <div>
+                                        <p class="lead-id mb-0">#MOS30001-STL0046-NB</p>
+                                        <h3 class="lead-title mb-0">MOS-BITE Protector Policy</h3>
+                                        <p class="lead-subtitle mb-0 fw-semibold">Mosquito Bite Insurance for Self (33), Spouse (35)</p>
+                                    </div>
+                                </div>
+                                <img src="./assets/img/IFFCO-TOKIo.svg" alt="" class="lead-brand-logo" />
+                            </div>
+                            <div class="lead-body">
+                                <div class="lead-body-left">
+                                    <div class="lead-metrics">
+                            <div class="metric-item">
+                                <span class="metric-label">Customer Name</span>
+                                <strong class="metric-value">Shristi Kamble</strong>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">Location</span>
+                                <strong class="metric-value">MP, 452001</strong>
+                            </div>
+                            <div class="metric-item with-divider">
+                                <span class="metric-label">Enquiry Date</span>
+                                <strong class="metric-value">24 Jan, 2026  |  13:00 PM</strong>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">Cover Amount</span>
+                                <strong class="metric-value">&#8377; 3,45,000</strong>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">Covered Diseases</span>
+                                <strong class="metric-value">Malaria, Dengue</strong>
+                            </div>
+                                    </div>
+                                    <div class="lead-footer pb-1">
+                                        <div class="tag-row">
+                                    <span class="lead-chip">Hospitalization Coverage</span>
+                                    <span class="lead-chip">Vector-borne Diseases</span>
+                                        </div>
+                                        <div class="lead-actions">
+                                            <button class="btn view-more-btn" type="button">View more details</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="lead-body-right">
+                                    <button class="btn lead-cta-btn" type="button">&#8377; 8,765</button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="lead-card">
+                        <span class="lead-stage lead-stage-orange">Awaiting Customer Response</span>
+                        <div class="lead-card-inner">
+                            <div class="lead-top">
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="lead-avatar">
+                                        <img src="./assets/img/Airoplne.svg" alt="" class="lead-avatar-img" />
+                                    </div>
+                                    <div>
+                                        <p class="lead-id mb-0">#TR00162-STL0024-NB</p>
+                                        <h3 class="lead-title mb-0">Silver Plus</h3>
+                                        <p class="lead-subtitle mb-0 fw-semibold">Travel Insurance for Self (33), Spouse (35)</p>
+                                    </div>
+                                </div>
+                                <img src="./assets/img/Tata.svg" alt="" class="lead-brand-logo lead-brand-logo-sm" />
+                            </div>
+                            <div class="lead-body">
+                                <div class="lead-body-left">
+                                    <div class="lead-metrics lead-metrics-6">
+                            <div class="metric-item">
+                                <span class="metric-label">Country</span>
+                                <strong class="metric-value">Canada &amp; 3 More</strong>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">Visa Type</span>
+                                <strong class="metric-value">Visitor</strong>
+                            </div>
+                            <div class="metric-item with-divider">
+                                <span class="metric-label">Enquiry Date</span>
+                                <strong class="metric-value">23 Jan, 2026  |  12:50 PM</strong>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">Cover Amount</span>
+                                <strong class="metric-value">$ 250,000</strong>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">Members</span>
+                                <strong class="metric-value">4</strong>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">Purpose</span>
+                                <strong class="metric-value">Travel</strong>
+                            </div>
+                                    </div>
+                                    <div class="lead-footer pb-1">
+                                        <div class="tag-row">
+                                    <span class="lead-chip">Zero Depreciation</span>
+                                    <span class="lead-chip">Road Side Assistance</span>
+                                        </div>
+                                        <div class="lead-actions">
+                                            <button class="btn view-more-btn" type="button">View more details</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="lead-body-right">
+                                    <button class="btn lead-cta-btn" type="button">&#8377; 6,515</button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="lead-card">
+                        <span class="lead-stage lead-stage-orange">Call Ringing</span>
+                        <div class="lead-card-inner">
+                            <div class="lead-top">
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="lead-avatar">
+                                        <img src="./assets/img/Educ.svg" alt="" class="lead-avatar-img" />
+                                    </div>
+                                    <div>
+                                        <p class="lead-id mb-0">#OS00001-POSP300048929-NB</p>
+                                        <h3 class="lead-title mb-0">Explore Ultra</h3>
+                                        <p class="lead-subtitle mb-0 fw-semibold">Overseas Student Travel Insurance</p>
+                                    </div>
+                                </div>
+                                <img src="./assets/img/Cara-health.svg" alt="" class="lead-brand-logo" />
+                            </div>
+                            <div class="lead-body">
+                                <div class="lead-body-left">
+                                    <div class="lead-metrics lead-metrics-6">
+                            <div class="metric-item">
+                                <span class="metric-label">Country</span>
+                                <strong class="metric-value">United Kingdom</strong>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">Visa Type</span>
+                                <strong class="metric-value">Student</strong>
+                            </div>
+                            <div class="metric-item with-divider">
+                                <span class="metric-label">Enquiry Date</span>
+                                <strong class="metric-value">22 Jan, 2026  |  11:00 AM</strong>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">Cover Amount</span>
+                                <strong class="metric-value">$ 300,000</strong>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">Policy Period</span>
+                                <strong class="metric-value">2 Yrs</strong>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">Purpose</span>
+                                <strong class="metric-value">Education</strong>
+                            </div>
+                                    </div>
+                                    <div class="lead-footer pb-1">
+                                        <div class="tag-row">
+                                    <span class="lead-chip">Tuition Fee Cover</span>
+                                    <span class="lead-chip">Medical Emergency</span>
+                                        </div>
+                                        <div class="lead-actions">
+                                            <button class="btn view-more-btn" type="button">View more details</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="lead-body-right">
+                                    <button class="btn lead-cta-btn" type="button">&#8377; 9,420</button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="lead-card">
+                        <span class="lead-stage lead-stage-red">Proposal Rejected</span>
+                        <div class="lead-card-inner">
+                            <div class="lead-top">
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="lead-avatar">
+                                        <img src="./assets/img/Lifeline-Classic.svg" alt="" class="lead-avatar-img" />
+                                    </div>
+                                    <div>
+                                        <p class="lead-id mb-0">#PR00811-STL0032-NB</p>
+                                        <h3 class="lead-title mb-0">Lifeline Classic</h3>
+                                        <p class="lead-subtitle mb-0 fw-semibold">Health Insurance for Self and Family</p>
+                                    </div>
+                                </div>
+                                <img src="./assets/img/hdfc-1.svg" alt="" class="lead-brand-logo" />
+                            </div>
+                            <div class="lead-body">
+                                <div class="lead-body-left">
+                                    <div class="lead-metrics">
+                            <div class="metric-item">
+                                <span class="metric-label">Customer Name</span>
+                                <strong class="metric-value">Shristi Kamble</strong>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">Location</span>
+                                <strong class="metric-value">Pune, 412101</strong>
+                            </div>
+                            <div class="metric-item with-divider">
+                                <span class="metric-label">Enquiry Date</span>
+                                <strong class="metric-value">21 Jan, 2026  |  10:30 AM</strong>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">Cover Amount</span>
+                                <strong class="metric-value">&#8377; 12,00,000</strong>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">Policy Term</span>
+                                <strong class="metric-value">2 Yrs</strong>
+                            </div>
+                                    </div>
+                                    <div class="lead-footer pb-1">
+                                        <div class="tag-row">
+                                    <span class="lead-chip">Cashless Hospitals</span>
+                                    <span class="lead-chip">Pre &amp; Post Hospitalization</span>
+                                        </div>
+                                        <div class="lead-actions">
+                                            <button class="btn view-more-btn" type="button">View more details</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="lead-body-right">
+                                    <button class="btn lead-cta-btn lead-cta-btn-red" type="button">&#8377; 10,00,00</button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="lead-card">
+                        <span class="lead-stage lead-stage-red">Not Interested</span>
+                        <div class="lead-card-inner">
+                            <div class="lead-top">
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="lead-avatar">
+                                        <img src="./assets/img/Time.svg" alt="" class="lead-avatar-img" />
+                                    </div>
+                                    <div>
+                                        <p class="lead-id mb-0">#NI00162-STL0024-NB</p>
+                                        <h3 class="lead-title mb-0">Simple Plan</h3>
+                                        <p class="lead-subtitle mb-0 fw-semibold">Other Insurance for ABC Private Limited</p>
+                                    </div>
+                                </div>
+                                <img src="./assets/img/ICIC.svg" alt="" class="lead-brand-logo" />
+                            </div>
+                            <div class="lead-body">
+                                <div class="lead-body-left">
+                                    <div class="lead-metrics">
+                            <div class="metric-item">
+                                <span class="metric-label">Customer Name</span>
+                                <strong class="metric-value">Shristi Kamble</strong>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">Location</span>
+                                <strong class="metric-value">Pune, 412101</strong>
+                            </div>
+                            <div class="metric-item with-divider">
+                                <span class="metric-label">Enquiry Date</span>
+                                <strong class="metric-value">20 Jan, 2026  |  09:20 AM</strong>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">Cover Amount</span>
+                                <strong class="metric-value">&#8377; 17,58,876</strong>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">Insurance Type</span>
+                                <strong class="metric-value">Techno-Event</strong>
+                            </div>
+                                    </div>
+                                    <div class="lead-footer pb-1">
+                                        <div class="tag-row">
+                                    <span class="lead-chip">Structure Coverage</span>
+                                    <span class="lead-chip">Burglary and Theft</span>
+                                        </div>
+                                        <div class="lead-actions">
+                                            <button class="btn view-more-btn" type="button">View more details</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="lead-body-right">
+                                    <button class="btn lead-cta-btn lead-cta-btn-red" type="button">Closed</button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </main>
+        </div>
+    </div>
+    <footer class="app-footer border-top">
+        <div class="container-fluid app-footer-wrap">
+            <p class="app-footer-text mb-0">&copy;1963&ndash;2025 BeyondSure. All rights reserved.</p>
+            <p class="app-footer-text mb-0">Powered by <span class="app-footer-link">Shrigoda Insurance Brokers
+                    Limited</span></p>
+            <p class="app-footer-text mb-0">Developed by <span class="app-footer-link">Shrigoda Tech Labs Pvt
+                    Ltd.</span></p>
+        </div>
+    </footer>
+ 
+    <button class="floating-help-btn" id="floatingHelpBtn" type="button" aria-label="Help and Support">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <rect x="4.25" y="4.25" width="15.5" height="12.5" rx="1.75" stroke="currentColor" stroke-width="1.5" />
+            <path d="M8 9H16M8 12H14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+            <path d="M9 18.75L11.8 16.75H15.2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+        </svg>
+    </button>    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="./assets/script/script.js"></script>
+</body>
+
+</html>
